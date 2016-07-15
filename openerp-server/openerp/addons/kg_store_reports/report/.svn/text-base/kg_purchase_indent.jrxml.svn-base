@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="kg_dep_issue" language="groovy" pageWidth="792" pageHeight="612" orientation="Landscape" columnWidth="752" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<subDataset name="dataset1">
+		<queryString>
+			<![CDATA[SELECT
+  po.id AS po_id,
+  po.name AS po_no,
+  to_char(po.date_order,'dd-mm-yyyy') AS po_date,
+  po.date_order AS date,
+  po.note AS remark,
+  po.amount_total as total,
+  po.add_text as address,
+  po.amount_tax as taxamt,
+  pol.id as pol_id,
+  pol.product_qty AS qty,
+  pol.pending_qty AS pending_qty,
+  pol.price_unit as rate,
+  pol.kg_discount_per as disc1,
+  pol.kg_disc_amt_per as disc2,
+  po_ad.advance_amt as po_ad_amt,
+  uom.name AS uom,
+  pt.name AS pro_name,
+  res.name AS su_name,
+  res.street AS str1,
+  res.zip as zip,
+  city.name as city,
+  state.name as state,
+  brand.name as brand_name,
+  po.quot_ref_no as quot_ref_no
+
+
+  FROM  purchase_order po
+
+  JOIN res_partner res ON (res.id=po.partner_id)
+  left join res_city city on(city.id=res.city)
+  left join res_country_state state on(state.id=res.state_id)
+  JOIN purchase_order_line pol ON (pol.order_id=po.id)
+  JOIN product_product prd ON (prd.id=pol.product_id)
+  JOIN product_template pt ON (pt.id=prd.product_tmpl_id)
+  JOIN product_uom uom ON (uom.id=pol.product_uom)
+  left JOIN kg_brand_master brand ON (pol.brand_id = brand.id)
+  left JOIN kg_project_master project ON (po.dep_project = project.id)
+  left JOIN kg_po_advance_line po_ad ON (po_ad.po_id = po.id)
+
+  where po.state='approved' and po.date_order >='2016-01-08' and po.date_order <='2016-02-08']]>
+		</queryString>
+		<field name="po_id" class="java.lang.Integer"/>
+		<field name="po_no" class="java.lang.String"/>
+		<field name="po_date" class="java.lang.String"/>
+		<field name="date" class="java.sql.Date"/>
+		<field name="remark" class="java.lang.String"/>
+		<field name="total" class="java.math.BigDecimal"/>
+		<field name="address" class="java.lang.String"/>
+		<field name="taxamt" class="java.math.BigDecimal"/>
+		<field name="pol_id" class="java.lang.Integer"/>
+		<field name="qty" class="java.lang.Double"/>
+		<field name="pending_qty" class="java.lang.Double"/>
+		<field name="rate" class="java.math.BigDecimal"/>
+		<field name="disc1" class="java.math.BigDecimal"/>
+		<field name="disc2" class="java.math.BigDecimal"/>
+		<field name="po_ad_amt" class="java.lang.Double"/>
+		<field name="uom" class="java.lang.String"/>
+		<field name="pro_name" class="java.lang.String"/>
+		<field name="su_name" class="java.lang.String"/>
+		<field name="str1" class="java.lang.String"/>
+		<field name="zip" class="java.lang.String"/>
+		<field name="city" class="java.lang.String"/>
+		<field name="state" class="java.lang.String"/>
+		<field name="brand_name" class="java.lang.String"/>
+		<field name="quot_ref_no" class="java.lang.String"/>
+	</subDataset>
+	<subDataset name="dataset2"/>
+	<parameter name="date_from" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="date_to" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="wiz_id" class="java.lang.Integer">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[select * from (
+
+SELECT
+
+to_char(pi.date_start,'dd/mm/yyyy') as indent_date,
+to_char(pi.date_start,'yyyy/mm/dd') as date_start,
+case when ROW_NUMBER() Over (Partition by pi.name) > 1
+then '   '  else 'PI No : '||(select distinct(name) from purchase_requisition where id = pi.id)||' / '||
+(select to_char(pi.date_start,'dd-mm-yyyy') from purchase_requisition where id = pi.id)||'                                                                                  '
+||'Requested by : '||(res.login)end as pi_no,
+pi.name as indent_number,
+product.name_template as product_name,
+pi_line.product_qty as pi_qty,
+pi_line.dep_indent_qty as di_qty,
+pi_line.pending_qty as pending_qty,
+uom.name as product_uom,
+to_char(depindent_line.required_date,'dd/mm/yyyy') as required_dates,
+pi_line.depindent_line_id as ids,
+case when (select state from purchase_requisition where id = pi.id) is not null then 'Approved' else (select state from purchase_requisition where id = pi.id) end as status,
+res.login as req_by,
+ROW_NUMBER() Over (Partition by pi.name) as num,
+pi.remark as remarks,
+cmp_name.name as company_name,
+(select login from res_users where id in (select user_id from kg_pi_detail_wizard where id = $P{wiz_id})) as user,
+(select to_char(create_date,'dd-mm-YYYY HH:MM:SS PM') from kg_pi_detail_wizard where id =$P{wiz_id}) as user_date,
+(select to_char(date_from,'dd-mm-yyyy') from kg_pi_detail_wizard where id =$P{wiz_id}) as from_date,
+(select to_char(date_to,'dd-mm-yyyy') from kg_pi_detail_wizard where id = $P{wiz_id}) as to_date
+
+
+FROM  purchase_requisition pi
+
+join purchase_requisition_line pi_line on (pi.id=pi_line.requisition_id)
+join kg_depindent_line depindent_line on (depindent_line.id=pi_line.depindent_line_id)
+join product_product product  on (product.id=pi_line.product_id)
+join product_uom uom on (uom.id=pi_line.product_uom_id)
+join res_users res on (res.id=pi.user_id)
+join res_company cmp_name on (cmp_name.id=pi.company_id)
+
+
+
+where
+pi.state = 'approved')as a
+where
+date_start >=$P{date_from} and date_start <=$P{date_to}]]>
+	</queryString>
+	<field name="indent_date" class="java.lang.String"/>
+	<field name="date_start" class="java.lang.String"/>
+	<field name="pi_no" class="java.lang.String"/>
+	<field name="indent_number" class="java.lang.String"/>
+	<field name="product_name" class="java.lang.String"/>
+	<field name="pi_qty" class="java.math.BigDecimal"/>
+	<field name="di_qty" class="java.lang.Double"/>
+	<field name="pending_qty" class="java.lang.Double"/>
+	<field name="product_uom" class="java.lang.String"/>
+	<field name="required_dates" class="java.lang.String"/>
+	<field name="ids" class="java.lang.Integer"/>
+	<field name="status" class="java.lang.String"/>
+	<field name="req_by" class="java.lang.String"/>
+	<field name="num" class="java.lang.Long"/>
+	<field name="remarks" class="java.lang.String"/>
+	<field name="company_name" class="java.lang.String"/>
+	<field name="user" class="java.lang.String"/>
+	<field name="user_date" class="java.lang.String"/>
+	<field name="from_date" class="java.lang.String"/>
+	<field name="to_date" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="50" splitType="Stretch">
+			<textField>
+				<reportElement x="244" y="20" width="275" height="14"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Purchase Indent Register"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="483" y="36" width="82" height="14"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Date Range : "]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="567" y="36" width="54" height="14"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{from_date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="621" y="36" width="19" height="14"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA["to"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="640" y="36" width="60" height="14"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{to_date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="207" y="1" width="351" height="16"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{company_name}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="33" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="1" width="45" height="32"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["S.No"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="45" y="1" width="219" height="32"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Product"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="505" y="1" width="60" height="32"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Required Date"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="395" y="1" width="52" height="32"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["UOM"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="329" y="1" width="66" height="32"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Requested Qty"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="264" y="1" width="65" height="32"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Product UOM"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="565" y="1" width="67" height="32"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["State"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="632" y="1" width="120" height="32"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Remarks"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="447" y="1" width="58" height="32"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Approved Qty"]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="38" splitType="Stretch">
+			<textField>
+				<reportElement x="45" y="3" width="602" height="13" isRemoveLineWhenBlank="true"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{pi_no}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="17" width="45" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{num}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="45" y="17" width="219" height="20"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{product_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="264" y="17" width="65" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{product_uom}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="329" y="17" width="66" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{di_qty}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="395" y="17" width="52" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{product_uom}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="447" y="17" width="58" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{pi_qty}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="505" y="17" width="60" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{required_dates}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="565" y="17" width="67" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{status}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="632" y="17" width="120" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{remarks}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="15" splitType="Stretch">
+			<textField>
+				<reportElement x="390" y="0" width="362" height="15"/>
+				<box>
+					<topPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="214" y="0" width="169" height="15"/>
+				<box>
+					<topPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1" y="0" width="213" height="15"/>
+				<box>
+					<topPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{user}+" / "+$F{user_date}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="382" y="0" width="8" height="15"/>
+				<box>
+					<topPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+				</box>
+				<textElement/>
+				<textFieldExpression><![CDATA[]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>

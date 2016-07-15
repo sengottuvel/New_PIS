@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+	
+	
+	<record id="kg_po_pending_mail_form" model="ir.ui.view">
+			<field name="name">PO Pending</field>
+			<field name="model">kg.po.pending.mail</field>
+			<field name="arch" type="xml">
+				<form string="PO Pending" version="7.0">
+					<header>
+						<button name="notification_to_user" type="object" string="Count"/>
+						
+					</header>								   
+				</form>
+			</field> 
+		</record>
+<record id="kg_po_pending_mail_form_action" model="ir.actions.act_window">
+			<field name="name">PO Pending</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">kg.po.pending.mail</field>
+			<field name="view_type">form</field>
+			<field name="view_id" ref="kg_po_pending_mail_form"/>
+		</record>
+
+		
+	
+<menuitem action="kg_po_pending_mail_form_action" id="kg_po_pending_mail_menu_status" parent="kg_notification.kg_notification_menu_sub" name="PO Pending" sequence="3"/>	
+	
+
+</data>
+	</openerp>

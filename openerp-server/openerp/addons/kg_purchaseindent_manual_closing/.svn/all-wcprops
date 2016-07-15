@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/KGTrust_ERP/!svn/ver/691/openerp-server/openerp/addons/kg_purchaseindent_manual_closing
+END
+__openerp__.py
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/KGTrust_ERP/!svn/ver/691/openerp-server/openerp/addons/kg_purchaseindent_manual_closing/__openerp__.py
+END
+kg_purchaseindent_manual_closing.py
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/KGTrust_ERP/!svn/ver/691/openerp-server/openerp/addons/kg_purchaseindent_manual_closing/kg_purchaseindent_manual_closing.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/KGTrust_ERP/!svn/ver/691/openerp-server/openerp/addons/kg_purchaseindent_manual_closing/__init__.py
+END
+kg_purchaseindent_manual_closing.xml
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/KGTrust_ERP/!svn/ver/691/openerp-server/openerp/addons/kg_purchaseindent_manual_closing/kg_purchaseindent_manual_closing.xml
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/analytic_user_function
+END
+__openerp__.py
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/analytic_user_function/__openerp__.py
+END
+analytic_user_function.py
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/analytic_user_function/analytic_user_function.py
+END
+analytic_user_function_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/analytic_user_function/analytic_user_function_view.xml
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/analytic_user_function/__init__.py
+END

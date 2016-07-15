@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/report
+END
+common.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/report/common.py
+END
+preprocess.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/report/preprocess.pyc
+END
+common.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/report/common.pyc
+END
+misc.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/report/misc.py
+END
+misc.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/report/misc.pyc
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/report/__init__.py
+END
+int_to_text.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/report/int_to_text.py
+END
+interface.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/report/interface.py
+END
+__init__.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/report/__init__.pyc
+END
+int_to_text.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/report/int_to_text.pyc
+END
+interface.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/report/interface.pyc
+END
+custom.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/report/custom.py
+END
+report_sxw.py
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/report/report_sxw.py
+END
+print_xml.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/report/print_xml.py
+END
+custom.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/report/custom.pyc
+END
+print_xml.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/report/print_xml.pyc
+END
+report_sxw.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/report/report_sxw.pyc
+END
+print_fnc.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/report/print_fnc.py
+END
+print_fnc.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/report/print_fnc.pyc
+END
+preprocess.py
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/report/preprocess.py
+END

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/hr_expense/test
+END
+expense_demo.yml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/hr_expense/test/expense_demo.yml
+END
+expense_process.yml
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/hr_expense/test/expense_process.yml
+END

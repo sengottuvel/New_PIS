@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/survey/test
+END
+draft2open2close_request.yml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/survey/test/draft2open2close_request.yml
+END
+survey_question_type.yml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/survey/test/survey_question_type.yml
+END
+survey_report.yml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/survey/test/survey_report.yml
+END
+draft2open2close_survey.yml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/survey/test/draft2open2close_survey.yml
+END

@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="custom_stock" language="groovy" pageWidth="595" pageHeight="842" whenNoDataType="NoDataSection" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<property name="ireport.zoom" value="1.3310000000000006"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="84"/>
+	<parameter name="location_id" class="java.lang.Integer">
+		<parameterDescription><![CDATA[]]></parameterDescription>
+	</parameter>
+	<parameter name="report_type" class="java.lang.String"/>
+	<parameter name="product_id" class="java.lang.Integer"/>
+	<parameter name="categ_id" class="java.lang.Integer">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="type" class="java.lang.String"/>
+	<parameter name="p_to_date" class="java.lang.String"/>
+	<parameter name="m_to_date" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="user_id" class="java.lang.Integer">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="report_type_name" class="java.lang.String"/>
+	<parameter name="user_name" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[select
+
+distinct
+product_name,
+stock_uom,
+pre_type,
+categ_id,
+case when categ1 is not null then categ1
+else 'No Category Assigned' end as
+categ1,
+categ2,
+categ3,
+categ4,
+categ5,
+categ6,
+round(rate::numeric,2) as rate,
+round(close_stock,2) as stock_qty,
+
+round(( Sum(product_value) over(partition by product_name))::numeric,2) as stock_total_value,
+users.id as user_id,
+
+
+part.street as street1,
+part.street2 as street2,
+comp_city.name as city,
+part.zip as zip,
+part.phone as phone,
+part.fax as fax,
+part.email as email,
+to_char(CURRENT_TIMESTAMP, 'DD-MM-YYYY HH12:MI:SS AM') AS New_Date,
+res_company.name as company_name
+
+from
+
+(
+
+select
+
+distinct
+product_name,
+stock_uom,
+type as pre_type,
+categ_id,
+categ1_id,
+categ2_id,
+categ3_id,
+categ4_id,
+categ5_id,
+categ6_id,
+categ1,
+categ2,
+categ3,
+categ4,
+categ5,
+categ6,
+rate,
+
+(Sum(in_qty) over(partition by product_name)
+-
+Sum(out_qty) over(partition by product_name) ) as close_stock,
+
+( Sum(in_qty * rate) over(partition by product_name,rate)
+-
+Sum(out_qty * rate) over(partition by product_name,rate) ) as product_value
+
+
+from
+
+(select
+
+prod_templ.name as product_name,
+product_product.type as type,
+product_uom.name as stock_uom,
+sub_query.categ_id,
+prod_categ1.id as categ1_id,
+prod_categ2.id as categ2_id,
+prod_categ3.id as categ3_id,
+prod_categ4.id as categ4_id,
+prod_categ5.id as categ5_id,
+prod_categ6.id as categ6_id,
+prod_categ1.name as categ1,
+prod_categ2.name as categ2,
+prod_categ3.name as categ3,
+prod_categ4.name as categ4,
+prod_categ5.name as categ5,
+prod_categ6.name as categ6,
+move_type as move_type,
+Sum(case when move_type = 'in'
+then stock_qty else 0 end) over(partition by product_id,move_type,rate) as in_qty,
+Sum(case when move_type = 'out'
+then stock_qty else 0 end) over(partition by product_id,move_type,rate) as out_qty,
+rate
+
+from
+
+(select
+product_id,
+
+stock_uom,
+categ_id,
+categ1,
+categ2,
+categ3,
+categ4,
+categ5,
+categ6,
+location_dest_id as location_id,
+move_type as move_type,
+sum(product_qty) as stock_qty,
+avg(price_tax) as rate
+
+
+from
+
+stock_move where move_type = 'in' and location_dest_id = $P{location_id}
+and to_char(date::date,'yyyy-mm-dd') <= $P{m_to_date}
+and state='done'
+and CASE
+
+WHEN $P{report_type} = 'product_wise' THEN product_id in ($P{product_id})
+
+ELSE product_id in (select distinct product_id from stock_production_lot where pending_qty > 0)
+
+END
+
+
+group by product_id,stock_uom,move_type,categ1,categ2,categ3,categ4,categ5,categ6,location_dest_id,
+move_type,categ_id
+
+union
+
+select
+product_id,
+stock_uom,
+categ_id,
+categ1,
+categ2,
+categ3,
+categ4,
+categ5,
+categ6,
+location_id as location_id,
+move_type as move_type,
+sum(product_qty) as stock_qty,
+avg(price_tax) as rate
+
+
+from
+stock_move where move_type = 'out' and location_id = $P{location_id}
+and to_char(date::date,'yyyy-mm-dd') <= $P{m_to_date}
+and state='done'
+and
+CASE
+
+WHEN $P{report_type} = 'product_wise' THEN product_id in ($P{product_id})
+
+ELSE product_id in (select distinct product_id from stock_production_lot where pending_qty > 0)
+
+END
+
+group by product_id,stock_uom,move_type,categ1,categ2,categ3,categ4,categ5,categ6,location_id,
+move_type,categ_id )
+
+sub_query
+
+
+
+left outer join  product_product ON product_product.id = sub_query.product_id
+left outer join  product_template prod_templ on prod_templ.id = product_product.product_tmpl_id
+left outer join  product_uom on product_uom.id=sub_query.stock_uom
+left outer join  product_category prod_categ1 on prod_categ1.id = sub_query.categ1
+left outer join  product_category prod_categ2 on prod_categ2.id = sub_query.categ2
+left outer join  product_category prod_categ3 on prod_categ3.id = sub_query.categ3
+left outer join  product_category prod_categ4 on prod_categ4.id = sub_query.categ4
+left outer join  product_category prod_categ5 on prod_categ5.id = sub_query.categ5
+left outer join  product_category prod_categ6 on prod_categ6.id = sub_query.categ6
+
+) as main_query
+
+where (in_qty - out_qty) > 0
+
+) as query
+
+left join res_company on res_company.id = 1
+left join res_partner part on (part.id = res_company.partner_id)
+left join res_city comp_city on (comp_city.id =res_company.city)
+left join res_users users on (users.id = $P{user_id})
+left join res_partner user_part on (user_part.id = users.partner_id)
+
+where
+
+categ_id in
+		(SELECT distinct categ_id from product_template   WHERE
+		CASE WHEN  $P{categ_id} > 0    THEN categ_id in (select distinct categ_id
+		from product_template where categ_id =  $P{categ_id}  )
+		ELSE categ_id in (select distinct categ_id
+		from product_template) END)
+
+and case when $P{type} is null then pre_type in ('consu','service','cap','assests')
+else pre_type = $P{type}
+end
+
+order by categ1,
+categ2,
+categ3,
+categ4,
+categ5,
+categ6]]>
+	</queryString>
+	<field name="product_name" class="java.lang.String"/>
+	<field name="stock_uom" class="java.lang.String"/>
+	<field name="pre_type" class="java.lang.String"/>
+	<field name="categ_id" class="java.lang.Integer"/>
+	<field name="categ1" class="java.lang.String"/>
+	<field name="categ2" class="java.lang.String"/>
+	<field name="categ3" class="java.lang.String"/>
+	<field name="categ4" class="java.lang.String"/>
+	<field name="categ5" class="java.lang.String"/>
+	<field name="categ6" class="java.lang.String"/>
+	<field name="rate" class="java.math.BigDecimal"/>
+	<field name="stock_qty" class="java.math.BigDecimal"/>
+	<field name="stock_total_value" class="java.math.BigDecimal"/>
+	<field name="user_id" class="java.lang.Integer"/>
+	<field name="street1" class="java.lang.String"/>
+	<field name="street2" class="java.lang.String"/>
+	<field name="city" class="java.lang.String"/>
+	<field name="zip" class="java.lang.String"/>
+	<field name="phone" class="java.lang.String"/>
+	<field name="fax" class="java.lang.String"/>
+	<field name="email" class="java.lang.String"/>
+	<field name="new_date" class="java.lang.String"/>
+	<field name="company_name" class="java.lang.String"/>
+	<variable name="stock_total_value_1" class="java.math.BigDecimal" resetType="Group" resetGroup="Categ1" calculation="Sum">
+		<variableExpression><![CDATA[$F{stock_total_value}]]></variableExpression>
+	</variable>
+	<variable name="stock_total_value_2" class="java.math.BigDecimal" resetType="Group" resetGroup="Categ2" calculation="Sum">
+		<variableExpression><![CDATA[$F{stock_total_value}]]></variableExpression>
+	</variable>
+	<variable name="stock_total_value_3" class="java.math.BigDecimal" resetType="Group" resetGroup="Categ3" calculation="Sum">
+		<variableExpression><![CDATA[$F{stock_total_value}]]></variableExpression>
+	</variable>
+	<variable name="stock_total_value_4" class="java.math.BigDecimal" resetType="Group" resetGroup="Categ4" calculation="Sum">
+		<variableExpression><![CDATA[$F{stock_total_value}]]></variableExpression>
+	</variable>
+	<variable name="stock_total_value_5" class="java.math.BigDecimal" resetType="Group" resetGroup="Categ5" calculation="Sum">
+		<variableExpression><![CDATA[$F{stock_total_value}]]></variableExpression>
+	</variable>
+	<variable name="stock_total_value_6" class="java.math.BigDecimal" resetType="Group" resetGroup="Categ6" calculation="Sum">
+		<variableExpression><![CDATA[$F{stock_total_value}]]></variableExpression>
+	</variable>
+	<group name="Categ1">
+		<groupExpression><![CDATA[$F{categ1}]]></groupExpression>
+		<groupHeader>
+			<band height="20">
+				<printWhenExpression><![CDATA[$F{categ1} != null]]></printWhenExpression>
+				<textField>
+					<reportElement mode="Transparent" x="30" y="0" width="237" height="20"/>
+					<textElement verticalAlignment="Middle">
+						<font size="12" isBold="true" isUnderline="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{categ1}]]></textFieldExpression>
+				</textField>
+				<textField evaluationTime="Group" evaluationGroup="Categ1" pattern="###0.00">
+					<reportElement mode="Transparent" x="452" y="0" width="103" height="20"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font size="11" isBold="true" isUnderline="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{stock_total_value_1}]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupHeader>
+	</group>
+	<group name="Categ2">
+		<groupExpression><![CDATA[$F{categ2}]]></groupExpression>
+		<groupHeader>
+			<band height="20">
+				<printWhenExpression><![CDATA[$F{categ2}  != null]]></printWhenExpression>
+				<textField>
+					<reportElement mode="Transparent" x="30" y="0" width="237" height="20"/>
+					<textElement verticalAlignment="Middle">
+						<font size="11" isItalic="true" isUnderline="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{categ2}]]></textFieldExpression>
+				</textField>
+				<textField evaluationTime="Group" evaluationGroup="Categ2">
+					<reportElement mode="Transparent" x="452" y="0" width="103" height="20"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font size="11" isBold="false" isItalic="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{stock_total_value_2}]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupHeader>
+	</group>
+	<group name="Categ3">
+		<groupExpression><![CDATA[$F{categ3}]]></groupExpression>
+		<groupHeader>
+			<band height="20">
+				<printWhenExpression><![CDATA[$F{categ3}  != null]]></printWhenExpression>
+				<textField evaluationTime="Group" evaluationGroup="Categ3">
+					<reportElement mode="Transparent" x="452" y="0" width="103" height="20"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font size="10"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{stock_total_value_3}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement mode="Transparent" x="30" y="0" width="234" height="20"/>
+					<textElement verticalAlignment="Middle">
+						<font isUnderline="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{categ3}]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupHeader>
+	</group>
+	<group name="Categ4">
+		<groupExpression><![CDATA[$F{categ4}]]></groupExpression>
+		<groupHeader>
+			<band height="20">
+				<printWhenExpression><![CDATA[$F{categ4}  != null]]></printWhenExpression>
+				<textField>
+					<reportElement mode="Transparent" x="30" y="0" width="237" height="20"/>
+					<textElement verticalAlignment="Middle">
+						<font isUnderline="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{categ4}]]></textFieldExpression>
+				</textField>
+				<textField evaluationTime="Group" evaluationGroup="Categ4">
+					<reportElement mode="Transparent" x="452" y="0" width="103" height="20"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font size="10"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{stock_total_value_4}]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupHeader>
+	</group>
+	<group name="Categ5">
+		<groupExpression><![CDATA[$F{categ5}]]></groupExpression>
+		<groupHeader>
+			<band height="20">
+				<printWhenExpression><![CDATA[$F{categ5}  != null]]></printWhenExpression>
+				<textField>
+					<reportElement mode="Transparent" x="30" y="0" width="237" height="20"/>
+					<textElement verticalAlignment="Middle">
+						<font size="9" isUnderline="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{categ5}]]></textFieldExpression>
+				</textField>
+				<textField evaluationTime="Group" evaluationGroup="Categ5">
+					<reportElement mode="Transparent" x="452" y="0" width="103" height="20"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{stock_total_value_5}]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupHeader>
+	</group>
+	<group name="Categ6">
+		<groupExpression><![CDATA[$F{categ6}]]></groupExpression>
+		<groupHeader>
+			<band height="20">
+				<printWhenExpression><![CDATA[$F{categ6}  != null]]></printWhenExpression>
+				<textField>
+					<reportElement mode="Transparent" x="30" y="0" width="237" height="20"/>
+					<textElement verticalAlignment="Middle">
+						<font size="8" isUnderline="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{categ6}]]></textFieldExpression>
+				</textField>
+				<textField evaluationTime="Group" evaluationGroup="Categ6">
+					<reportElement mode="Transparent" x="452" y="0" width="103" height="20"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{stock_total_value_6}]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupHeader>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="71" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Transparent" x="1" y="38" width="555" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[STOCK REPORT]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="1" y="0" width="555" height="18"/>
+				<textElement>
+					<font size="14" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{company_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="18" width="555" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{street1}+$F{street2}+$F{city}+"-"+$F{zip}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="54" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Transparent" x="452" y="39" width="104" height="15"/>
+				<box rightPadding="1">
+					<topPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<text><![CDATA[Value]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="31" y="39" width="251" height="15"/>
+				<box leftPadding="1">
+					<topPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+				</box>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Product]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="312" y="39" width="65" height="15"/>
+				<box rightPadding="1">
+					<topPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<text><![CDATA[Qty]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="267" y="39" width="45" height="15"/>
+				<box leftPadding="1">
+					<topPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+				</box>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[UOM]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="1" y="39" width="30" height="15"/>
+				<box leftPadding="1">
+					<topPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+				</box>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Sl.No.]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="377" y="39" width="75" height="15"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA["Rate"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1" y="0" width="145" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA["As on : " +$P{p_to_date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="411" y="0" width="144" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA["Report Type : "+$P{report_type_name}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20">
+			<textField>
+				<reportElement mode="Transparent" x="324" y="0" width="53" height="20"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{stock_qty}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="452" y="0" width="103" height="20"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{stock_total_value}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="31" y="0" width="250" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{product_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="1" y="0" width="30" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{REPORT_COUNT}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="281" y="0" width="43" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{stock_uom}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="377" y="0" width="75" height="20"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{rate}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="13" splitType="Stretch">
+			<textField>
+				<reportElement positionType="Float" mode="Transparent" x="146" y="0" width="151" height="13"/>
+				<box topPadding="2">
+					<topPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement positionType="Float" mode="Transparent" x="297" y="0" width="258" height="13"/>
+				<box topPadding="2">
+					<topPen lineWidth="0.25"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1" y="0" width="145" height="13"/>
+				<box>
+					<topPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.0"/>
+				</box>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{user_name}+" "+"/"+" "+$F{new_date}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<noData>
+		<band height="20">
+			<staticText>
+				<reportElement mode="Transparent" x="1" y="0" width="554" height="20"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA["No Records Found" ]]></text>
+			</staticText>
+		</band>
+	</noData>
+</jasperReport>

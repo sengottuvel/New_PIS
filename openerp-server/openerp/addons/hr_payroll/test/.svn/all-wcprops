@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/hr_payroll/test
+END
+payslip.yml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/hr_payroll/test/payslip.yml
+END
+hr_payroll_report.yml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/hr_payroll/test/hr_payroll_report.yml
+END

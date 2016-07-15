@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/mrp_repair/test
+END
+mrp_repair_report.yml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/mrp_repair/test/mrp_repair_report.yml
+END
+test_mrp_repair_noneinv.yml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/mrp_repair/test/test_mrp_repair_noneinv.yml
+END
+test_mrp_repair_afterinv.yml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/mrp_repair/test/test_mrp_repair_afterinv.yml
+END
+test_mrp_repair_b4inv.yml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/mrp_repair/test/test_mrp_repair_b4inv.yml
+END
+test_mrp_repair_cancel.yml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/mrp_repair/test/test_mrp_repair_cancel.yml
+END

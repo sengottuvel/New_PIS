@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/web/tests/qunitsuite/grunt
+END
+phantomjs.json
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/web/tests/qunitsuite/grunt/phantomjs.json
+END
+license
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/web/tests/qunitsuite/grunt/license
+END
+qunit-phantomjs-bridge.js
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/web/tests/qunitsuite/grunt/qunit-phantomjs-bridge.js
+END
+bootstrap.js
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/web/tests/qunitsuite/grunt/bootstrap.js
+END

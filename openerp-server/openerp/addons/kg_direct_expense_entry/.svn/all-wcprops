@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/KGTrust_ERP/!svn/ver/735/openerp-server/openerp/addons/kg_direct_expense_entry
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/KGTrust_ERP/!svn/ver/703/openerp-server/openerp/addons/kg_direct_expense_entry/__init__.py
+END
+kg_direct_expense_entry.py
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/KGTrust_ERP/!svn/ver/735/openerp-server/openerp/addons/kg_direct_expense_entry/kg_direct_expense_entry.py
+END
+__openerp__.py
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/KGTrust_ERP/!svn/ver/703/openerp-server/openerp/addons/kg_direct_expense_entry/__openerp__.py
+END
+kg_direct_expense_entry_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/KGTrust_ERP/!svn/ver/735/openerp-server/openerp/addons/kg_direct_expense_entry/kg_direct_expense_entry_view.xml
+END

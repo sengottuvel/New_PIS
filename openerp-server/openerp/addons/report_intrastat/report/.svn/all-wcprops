@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/report_intrastat/report
+END
+invoice.rml
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/report_intrastat/report/invoice.rml
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/report_intrastat/report/__init__.py
+END
+invoice.sxw
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/report_intrastat/report/invoice.sxw
+END
+invoice.py
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/report_intrastat/report/invoice.py
+END

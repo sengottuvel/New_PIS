@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/KGTrust_ERP/!svn/ver/145/openerp-server/openerp/addons/kg_cash_voucher/report
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/kg_cash_voucher/report/__init__.py
+END
+onscreen_cash_voucher_report.py
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/kg_cash_voucher/report/onscreen_cash_voucher_report.py
+END
+Cash_Voucher.jasper
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/kg_cash_voucher/report/Cash_Voucher.jasper
+END
+Cash_Voucher.jrxml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/KGTrust_ERP/!svn/ver/145/openerp-server/openerp/addons/kg_cash_voucher/report/Cash_Voucher.jrxml
+END

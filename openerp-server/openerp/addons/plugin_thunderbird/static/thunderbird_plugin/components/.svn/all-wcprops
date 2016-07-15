@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/plugin_thunderbird/static/thunderbird_plugin/components
+END
+xml-rpc.xpt
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/plugin_thunderbird/static/thunderbird_plugin/components/xml-rpc.xpt
+END
+nsXmlRpcClient.js
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/plugin_thunderbird/static/thunderbird_plugin/components/nsXmlRpcClient.js
+END

@@ -1,0 +1,143 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/stock/report
+END
+stock_inventory_move.rml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/stock/report/stock_inventory_move.rml
+END
+lot_move_label.xml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/stock/report/lot_move_label.xml
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/stock/report/__init__.py
+END
+lot_move_label.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/stock/report/lot_move_label.xsl
+END
+stock_graph.py
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/stock/report/stock_graph.py
+END
+report_stock_move.py
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/stock/report/report_stock_move.py
+END
+stock_by_location.py
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/stock/report/stock_by_location.py
+END
+lot_overview_all.sxw
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/stock/report/lot_overview_all.sxw
+END
+report_stock_move_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/stock/report/report_stock_move_view.xml
+END
+lot_overview_all.py
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/stock/report/lot_overview_all.py
+END
+lot_overview.sxw
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/stock/report/lot_overview.sxw
+END
+picking.sxw
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/stock/report/picking.sxw
+END
+lot_overview_all.rml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/stock/report/lot_overview_all.rml
+END
+report_stock.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/stock/report/report_stock.py
+END
+stock_inventory_move.sxw
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/stock/report/stock_inventory_move.sxw
+END
+report_stock_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/stock/report/report_stock_view.xml
+END
+stock_inventory_move_report.py
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/stock/report/stock_inventory_move_report.py
+END
+product_stock.py
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/stock/report/product_stock.py
+END
+stock_by_location.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/stock/report/stock_by_location.xsl
+END
+picking.py
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/stock/report/picking.py
+END
+lot_overview.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/stock/report/lot_overview.py
+END
+picking.rml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/stock/report/picking.rml
+END
+lot_overview.rml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/stock/report/lot_overview.rml
+END

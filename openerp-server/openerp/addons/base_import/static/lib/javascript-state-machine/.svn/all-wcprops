@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/base_import/static/lib/javascript-state-machine
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/base_import/static/lib/javascript-state-machine/LICENSE
+END
+Rakefile
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/base_import/static/lib/javascript-state-machine/Rakefile
+END
+RELEASE_NOTES.md
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/base_import/static/lib/javascript-state-machine/RELEASE_NOTES.md
+END
+index.html
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/base_import/static/lib/javascript-state-machine/index.html
+END
+README.md
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/base_import/static/lib/javascript-state-machine/README.md
+END
+state-machine.js
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/base_import/static/lib/javascript-state-machine/state-machine.js
+END

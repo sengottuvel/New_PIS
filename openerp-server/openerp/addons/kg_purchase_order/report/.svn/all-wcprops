@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/KGTrust_ERP/!svn/ver/772/openerp-server/openerp/addons/kg_purchase_order/report
+END
+Purchase_Order.jrxml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/KGTrust_ERP/!svn/ver/772/openerp-server/openerp/addons/kg_purchase_order/report/Purchase_Order.jrxml
+END
+kg_Purchase_Order.jrxml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/KGTrust_ERP/!svn/ver/772/openerp-server/openerp/addons/kg_purchase_order/report/kg_Purchase_Order.jrxml
+END
+onscreen_purchase_order_report.py
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/kg_purchase_order/report/onscreen_purchase_order_report.py
+END
+onscreen_kg_purchase_order_report.py
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/KGTrust_ERP/!svn/ver/749/openerp-server/openerp/addons/kg_purchase_order/report/onscreen_kg_purchase_order_report.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/KGTrust_ERP/!svn/ver/749/openerp-server/openerp/addons/kg_purchase_order/report/__init__.py
+END
+onscreen_purchase_order_report.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/KGTrust_ERP/!svn/ver/618/openerp-server/openerp/addons/kg_purchase_order/report/onscreen_purchase_order_report.pyc
+END
+Purchase_Order.jasper
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/KGTrust_ERP/!svn/ver/618/openerp-server/openerp/addons/kg_purchase_order/report/Purchase_Order.jasper
+END
+__init__.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/KGTrust_ERP/!svn/ver/618/openerp-server/openerp/addons/kg_purchase_order/report/__init__.pyc
+END

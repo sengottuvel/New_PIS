@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Selling_cost" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<subDataset name="dataset1">
+		<parameter name="sc_id" class="java.lang.Integer"/>
+		<queryString>
+			<![CDATA[select
+
+sc_line.id as sc_line_id,
+product.name_template as product_name,
+uom.name as uom,
+brand.name as brand,
+round(sc_line.purchase_price::numeric,2) as p_price,
+round(sc_line.sale_price::numeric,2) as s_price
+
+
+from kg_selling_cost_details_line sc_line
+
+left join kg_selling_cost_details sc on (sc.id=sc_line.header_id)
+
+left join product_product product on (sc_line.product_id=product.id)
+
+left join product_uom uom on (sc_line.uom_id=uom.id)
+
+left join kg_brand_master brand on (sc_line.brand_id=brand.id)
+
+where sc_line.header_id = $P{sc_id}]]>
+		</queryString>
+		<field name="sc_line_id" class="java.lang.Integer"/>
+		<field name="product_name" class="java.lang.String"/>
+		<field name="uom" class="java.lang.String"/>
+		<field name="brand" class="java.lang.String"/>
+		<field name="p_price" class="java.math.BigDecimal"/>
+		<field name="s_price" class="java.math.BigDecimal"/>
+	</subDataset>
+	<parameter name="sc_id" class="java.lang.Integer"/>
+	<queryString>
+		<![CDATA[select
+
+sc.id as sc_id,
+sc.state as status,
+comp.name as company_name,
+part.street as street1,
+part.street2 as street2,
+comp_city.name as city,
+part.zip as zip,
+part.phone as phone,
+part.fax as fax,
+part.email as email,
+to_char(sc.trans_date::date,'dd-mm-YYYY') as sc_date,
+to_char(CURRENT_TIMESTAMP, 'DD-MM-YYYY HH12:MI:SS AM') AS New_Date,
+user_part.name as user_name
+from kg_selling_cost_details sc
+
+left join res_users users on (users.id = sc.user_id)
+left join res_partner user_part on (user_part.id = users.partner_id)
+left join res_company comp on (comp.id = sc.company_id)
+left join res_partner part on (part.id = comp.partner_id)
+left join res_city comp_city on (comp_city.id = comp.city)
+
+where sc.id = $P{sc_id}]]>
+	</queryString>
+	<field name="sc_id" class="java.lang.Integer"/>
+	<field name="status" class="java.lang.String"/>
+	<field name="company_name" class="java.lang.String"/>
+	<field name="street1" class="java.lang.String"/>
+	<field name="street2" class="java.lang.String"/>
+	<field name="city" class="java.lang.String"/>
+	<field name="zip" class="java.lang.String"/>
+	<field name="phone" class="java.lang.String"/>
+	<field name="fax" class="java.lang.String"/>
+	<field name="email" class="java.lang.String"/>
+	<field name="sc_date" class="java.lang.String"/>
+	<field name="new_date" class="java.lang.String"/>
+	<field name="user_name" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="41" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="555" height="20"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{company_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="20" width="555" height="20"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{street1}+$F{street2}+$F{city}+"-"+$F{zip}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="555" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Selling Cost Register"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="31" width="138" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA["Date :"+" "+$F{sc_date}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="40" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="38" height="20"/>
+				<box>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["S.No"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="38" y="0" width="191" height="20"/>
+				<box>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Product"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="229" y="0" width="111" height="20"/>
+				<box>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Brand"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="340" y="0" width="64" height="20"/>
+				<box>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["UOM"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="485" y="0" width="70" height="20"/>
+				<box>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Selling Cost"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="404" y="0" width="81" height="20"/>
+				<box>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Purchase Cost"]]></textFieldExpression>
+			</textField>
+			<componentElement>
+				<reportElement x="0" y="20" width="555" height="20"/>
+				<jr:list xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" printOrder="Vertical">
+					<datasetRun subDataset="dataset1">
+						<datasetParameter name="sc_id">
+							<datasetParameterExpression><![CDATA[$F{sc_id}]]></datasetParameterExpression>
+						</datasetParameter>
+						<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+					</datasetRun>
+					<jr:listContents height="20" width="555">
+						<textField>
+							<reportElement x="0" y="0" width="38" height="20"/>
+							<box>
+								<topPen lineWidth="0.75"/>
+								<leftPen lineWidth="0.75"/>
+								<bottomPen lineWidth="0.75"/>
+								<rightPen lineWidth="0.75"/>
+							</box>
+							<textElement textAlignment="Center" verticalAlignment="Middle"/>
+							<textFieldExpression><![CDATA[$V{REPORT_COUNT}]]></textFieldExpression>
+						</textField>
+						<textField>
+							<reportElement x="38" y="0" width="191" height="20"/>
+							<box leftPadding="3">
+								<topPen lineWidth="0.75"/>
+								<leftPen lineWidth="0.75"/>
+								<bottomPen lineWidth="0.75"/>
+								<rightPen lineWidth="0.75"/>
+							</box>
+							<textElement verticalAlignment="Middle"/>
+							<textFieldExpression><![CDATA[$F{product_name}]]></textFieldExpression>
+						</textField>
+						<textField isBlankWhenNull="true">
+							<reportElement x="229" y="0" width="111" height="20"/>
+							<box leftPadding="2">
+								<topPen lineWidth="0.75"/>
+								<leftPen lineWidth="0.75"/>
+								<bottomPen lineWidth="0.75"/>
+								<rightPen lineWidth="0.75"/>
+							</box>
+							<textElement textAlignment="Left" verticalAlignment="Middle"/>
+							<textFieldExpression><![CDATA[$F{brand}]]></textFieldExpression>
+						</textField>
+						<textField>
+							<reportElement x="340" y="0" width="64" height="20"/>
+							<box>
+								<topPen lineWidth="0.75"/>
+								<leftPen lineWidth="0.75"/>
+								<bottomPen lineWidth="0.75"/>
+								<rightPen lineWidth="0.75"/>
+							</box>
+							<textElement textAlignment="Center" verticalAlignment="Middle"/>
+							<textFieldExpression><![CDATA[$F{uom}]]></textFieldExpression>
+						</textField>
+						<textField>
+							<reportElement x="404" y="0" width="81" height="20"/>
+							<box rightPadding="2">
+								<topPen lineWidth="0.75"/>
+								<leftPen lineWidth="0.75"/>
+								<bottomPen lineWidth="0.75"/>
+								<rightPen lineWidth="0.75"/>
+							</box>
+							<textElement textAlignment="Right" verticalAlignment="Middle"/>
+							<textFieldExpression><![CDATA[$F{p_price}]]></textFieldExpression>
+						</textField>
+						<textField>
+							<reportElement x="485" y="0" width="70" height="20"/>
+							<box rightPadding="2">
+								<topPen lineWidth="0.75"/>
+								<leftPen lineWidth="0.75"/>
+								<bottomPen lineWidth="0.75"/>
+								<rightPen lineWidth="0.75"/>
+							</box>
+							<textElement textAlignment="Right" verticalAlignment="Middle"/>
+							<textFieldExpression><![CDATA[$F{s_price}]]></textFieldExpression>
+						</textField>
+					</jr:listContents>
+				</jr:list>
+			</componentElement>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="34" width="229" height="20"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{user_name}+" "+"/"+" "+$F{new_date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="229" y="34" width="80" height="20"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="309" y="34" width="246" height="20"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

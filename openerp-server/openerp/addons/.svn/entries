@@ -1,0 +1,1001 @@
+10
+
+dir
+130
+https://10.100.1.252/svn/KGTrust_ERP/openerp-server/openerp/addons
+https://10.100.1.252/svn/KGTrust_ERP
+
+
+
+2015-11-03T17:47:24.605750Z
+130
+manjula
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+de78f897-21fa-a34a-867f-79886b056ce6
+
+stock_no_autopicking
+dir
+
+product_margin
+dir
+
+process
+dir
+
+kg_partners
+dir
+
+kg_po_advance
+dir
+
+base_report_designer
+dir
+
+base_iban
+dir
+
+project_gtd
+dir
+
+kg_depmaster
+dir
+
+lunch
+dir
+
+l10n_lu
+dir
+
+stock_location
+dir
+
+web_view_editor
+dir
+
+event_moodle
+dir
+
+event
+dir
+
+sale
+dir
+
+l10n_ma
+dir
+
+base_gengo
+dir
+
+web_linkedin
+dir
+
+portal_project_long_term
+dir
+
+plugin
+dir
+
+hr_expense
+dir
+
+auth_oauth
+dir
+
+idea
+dir
+
+product_visible_discount
+dir
+
+kg_menus
+dir
+
+hr
+dir
+
+claim_from_delivery
+dir
+
+kg_service_order
+dir
+
+l10n_mx
+dir
+
+purchase_double_validation
+dir
+
+marketing_campaign
+dir
+
+crm_partner_assign
+dir
+
+kg_qa
+dir
+
+kg_purchase_amendment
+dir
+
+account_followup
+dir
+
+kg_mail_settings
+dir
+
+account_analytic_default
+dir
+
+kg_so_amendment
+dir
+
+hr_timesheet_invoice
+dir
+
+web_diagram
+dir
+
+l10n_nl
+dir
+
+pad
+dir
+
+web_calendar
+dir
+
+sale_journal
+dir
+
+product
+dir
+
+account_analytic_analysis
+dir
+
+portal_project
+dir
+
+kg_gate_pass
+dir
+
+membership
+dir
+
+kg_category_mail
+dir
+
+sale_analytic_plans
+dir
+
+kg_purchaseindent_manual_closing
+dir
+
+account_report_company
+dir
+
+account_analytic_plans
+dir
+
+document
+dir
+
+project_issue
+dir
+
+analytic_contract_hr_expense
+dir
+
+kg_outwardmaster
+dir
+
+delivery
+dir
+
+google_docs
+dir
+
+l10n_multilang
+dir
+
+web_kanban
+dir
+
+hr_recruitment
+dir
+
+l10n_pa
+dir
+
+l10n_in_hr_payroll
+dir
+
+account_check_writing
+dir
+
+kg_po_masters
+dir
+
+l10n_pe
+dir
+
+mrp_repair
+dir
+
+portal_crm
+dir
+
+audittrail
+dir
+
+kg_po_pending_mail
+dir
+
+l10n_pl
+dir
+
+warning
+dir
+
+project
+dir
+
+base
+dir
+
+web_gantt
+dir
+
+kg_shift_time
+dir
+
+l10n_pt
+dir
+
+web
+dir
+
+kg_service_indent
+dir
+
+account_anglo_saxon
+dir
+
+account_budget
+dir
+
+sale_stock
+dir
+
+account_payment
+dir
+
+l10n_ar
+dir
+
+l10n_at
+dir
+
+kg_sale_projection
+dir
+
+mrp_jit
+dir
+
+analytic_user_function
+dir
+
+kg_po_manual_closing
+dir
+
+kg_so_manual_closing
+dir
+
+base_status
+dir
+
+l10n_be
+dir
+
+kg_deliverytype_master
+dir
+
+point_of_sale
+dir
+
+kg_inwardmaster
+dir
+
+marketing
+dir
+
+subscription
+dir
+
+crm_profiling
+dir
+
+l10n_bo
+dir
+
+product_manufacturer
+dir
+
+survey
+dir
+
+l10n_br
+dir
+
+l10n_be_invoice_bba
+dir
+
+portal
+dir
+
+note
+dir
+
+kg_depindent_manual_closing
+dir
+
+document_webdav
+dir
+
+l10n_syscohada
+dir
+
+kg_issue_return
+dir
+
+l10n_ro
+dir
+
+hr_payroll
+dir
+
+account_accountant
+dir
+
+l10n_ca
+dir
+
+multi_company
+dir
+
+kg_users
+dir
+
+l10n_ch
+dir
+
+event_sale
+dir
+
+auth_signup
+dir
+
+l10n_cl
+dir
+
+kg_account_invoice
+dir
+
+__init__.pyc
+file
+
+
+
+
+2015-10-08T03:46:46.503765Z
+8ec076aa34e764377379e895eb6b4916
+2015-09-15T06:58:25.438569Z
+2
+sengottuvelu
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+722
+
+l10n_cn
+dir
+
+pad_project
+dir
+
+account_bank_statement_extensions
+dir
+
+l10n_co
+dir
+
+web_shortcuts
+dir
+
+l10n_cr
+dir
+
+sale_order_dates
+dir
+
+hr_evaluation
+dir
+
+mrp_operations
+dir
+
+auth_ldap
+dir
+
+web_tests_demo
+dir
+
+base_calendar
+dir
+
+analytic
+dir
+
+base_import
+dir
+
+hr_holidays
+dir
+
+l10n_si
+dir
+
+crm_todo
+dir
+
+kg_po_reports
+dir
+
+base_quality_interrogation.py
+file
+
+
+
+
+2015-10-08T03:46:46.503765Z
+b3c9c49059735e21b12ec6c06d8d2afd
+2015-09-15T06:58:25.438569Z
+2
+sengottuvelu
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+14692
+
+kg_common_grn
+dir
+
+email_template
+dir
+
+l10n_de
+dir
+
+kg_brandmaster
+dir
+
+__init__.py
+file
+
+
+
+
+2015-10-08T03:46:46.503765Z
+47fc9a4d123ee98029d2a62825dcea38
+2015-09-15T06:58:25.438569Z
+2
+sengottuvelu
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1657
+
+hr_payroll_account
+dir
+
+kg_tax_structure
+dir
+
+portal_project_issue
+dir
+
+web_hello
+dir
+
+kg_project_master
+dir
+
+kg_gatepass_manual_closing
+dir
+
+kg_direct_expense_entry
+dir
+
+kg_general_grn
+dir
+
+portal_stock
+dir
+
+l10n_th
+dir
+
+portal_hr_employees
+dir
+
+project_long_term
+dir
+
+knowledge
+dir
+
+l10n_tr
+dir
+
+hr_timesheet
+dir
+
+kg_minormaster
+dir
+
+l10n_ec
+dir
+
+auth_crypt
+dir
+
+web_printscreen_zb
+dir
+
+resource
+dir
+
+account_test
+dir
+
+purchase_analytic_plans
+dir
+
+account
+dir
+
+web_graph
+dir
+
+kg_contract
+dir
+
+crm_helpdesk
+dir
+
+l10n_es
+dir
+
+l10n_et
+dir
+
+kg_contractor_inward
+dir
+
+portal_claim
+dir
+
+l10n_uk
+dir
+
+plugin_outlook
+dir
+
+kg_grn_moves
+dir
+
+crm
+dir
+
+l10n_us
+dir
+
+sale_margin
+dir
+
+kg_pos
+dir
+
+l10n_uy
+dir
+
+kg_grn_qa
+dir
+
+kg_department_issue
+dir
+
+l10n_fr
+dir
+
+share
+dir
+
+l10n_ve
+dir
+
+l10n_be_coda
+dir
+
+kg_notification
+dir
+
+kg_grn
+dir
+
+association
+dir
+
+l10n_vn
+dir
+
+google_base_account
+dir
+
+kg_so_advance
+dir
+
+project_mrp
+dir
+
+account_sequence
+dir
+
+kg_holiday_master
+dir
+
+sale_crm
+dir
+
+board
+dir
+
+plugin_thunderbird
+dir
+
+kg_purchase_indent
+dir
+
+kg_service_invoice
+dir
+
+hr_attendance
+dir
+
+kg_depissue
+dir
+
+l10n_gr
+dir
+
+l10n_gt
+dir
+
+kg_purchase_invoice
+dir
+
+product_warranty
+dir
+
+account_chart
+dir
+
+product_expiry
+dir
+
+mail
+dir
+
+stock
+dir
+
+web_analytics
+dir
+
+base_vat
+dir
+
+base_setup
+dir
+
+account_asset
+dir
+
+kg_store_reports
+dir
+
+l10n_fr_hr_payroll
+dir
+
+auth_openid
+dir
+
+l10n_hn
+dir
+
+anonymization
+dir
+
+l10n_hr
+dir
+
+portal_sale
+dir
+
+purchase_requisition
+dir
+
+web_api
+dir
+
+document_page
+dir
+
+purchase
+dir
+
+l10n_be_hr_payroll
+dir
+
+crm_claim
+dir
+
+auth_oauth_signup
+dir
+
+mrp_byproduct
+dir
+
+note_pad
+dir
+
+l10n_fr_rib
+dir
+
+stock_invoice_directly
+dir
+
+kg_web
+dir
+
+kg_bom
+dir
+
+base_action_rule
+dir
+
+fleet
+dir
+
+l10n_in
+dir
+
+jasper_reports
+dir
+
+portal_event
+dir
+
+project_issue_sheet
+dir
+
+l10n_it
+dir
+
+portal_anonymous
+dir
+
+project_timesheet
+dir
+
+kg_leave_type
+dir
+
+contacts
+dir
+
+kg_hrm_menus
+dir
+
+.bzrignore
+file
+
+
+
+
+2015-10-08T03:46:46.503765Z
+a89245058732b01796d0ce1e2279fb00
+2015-09-15T06:58:25.438569Z
+2
+sengottuvelu
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3
+
+report_webkit
+dir
+
+marketing_campaign_crm_demo
+dir
+
+kg_purchase_order
+dir
+
+account_voucher
+dir
+
+document_ftp
+dir
+
+l10n_be_hr_payroll_account
+dir
+
+kg_cash_voucher
+dir
+
+kg_depindent
+dir
+
+kg_gate_pass_pending_mail
+dir
+
+mrp
+dir
+
+kg_employee
+dir
+
+kg_physical_stock
+dir
+
+kg_item_ledger
+dir
+
+report_intrastat
+dir
+
+hr_contract
+dir
+
+hr_timesheet_sheet
+dir
+
+decimal_precision
+dir
+
+kg_selling_cost_details
+dir
+
+kg_dep_standard_issue
+dir
+
+kg_subcontract_master
+dir
+
+kg_dep_standard_entry
+dir
+
+fetchmail
+dir
+
+web_tests
+dir
+
+kg_inventory_users
+dir
+
+edi
+dir
+
+kg_product
+dir
+
+account_cancel
+dir
+
+sale_mrp
+dir
+
+procurement
+dir
+
+kg_po_grn
+dir
+

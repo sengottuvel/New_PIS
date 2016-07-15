@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/account_budget/report
+END
+analytic_account_budget_report.py
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/account_budget/report/analytic_account_budget_report.py
+END
+budget_report.py
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/account_budget/report/budget_report.py
+END
+crossovered_budget_report.rml
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/account_budget/report/crossovered_budget_report.rml
+END
+analytic_account_budget_report.rml
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/account_budget/report/analytic_account_budget_report.rml
+END
+budget_report.rml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/account_budget/report/budget_report.rml
+END
+crossovered_budget_report.sxw
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/account_budget/report/crossovered_budget_report.sxw
+END
+analytic_account_budget_report.sxw
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/account_budget/report/analytic_account_budget_report.sxw
+END
+budget_report.sxw
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/account_budget/report/budget_report.sxw
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/account_budget/report/__init__.py
+END
+crossovered_budget_report.py
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/account_budget/report/crossovered_budget_report.py
+END

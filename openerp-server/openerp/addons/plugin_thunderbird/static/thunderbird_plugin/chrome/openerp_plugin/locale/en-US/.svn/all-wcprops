@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/plugin_thunderbird/static/thunderbird_plugin/chrome/openerp_plugin/locale/en-US
+END
+create.dtd
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/plugin_thunderbird/static/thunderbird_plugin/chrome/openerp_plugin/locale/en-US/create.dtd
+END
+address.dtd
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/plugin_thunderbird/static/thunderbird_plugin/chrome/openerp_plugin/locale/en-US/address.dtd
+END
+config.dtd
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/plugin_thunderbird/static/thunderbird_plugin/chrome/openerp_plugin/locale/en-US/config.dtd
+END
+config_change.dtd
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/plugin_thunderbird/static/thunderbird_plugin/chrome/openerp_plugin/locale/en-US/config_change.dtd
+END
+selectpartner.dtd
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/plugin_thunderbird/static/thunderbird_plugin/chrome/openerp_plugin/locale/en-US/selectpartner.dtd
+END
+plugin.dtd
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/plugin_thunderbird/static/thunderbird_plugin/chrome/openerp_plugin/locale/en-US/plugin.dtd
+END
+mboximport.properties
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/plugin_thunderbird/static/thunderbird_plugin/chrome/openerp_plugin/locale/en-US/mboximport.properties
+END
+overlay.dtd
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/plugin_thunderbird/static/thunderbird_plugin/chrome/openerp_plugin/locale/en-US/overlay.dtd
+END

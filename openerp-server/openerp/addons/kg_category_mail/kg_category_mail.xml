@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+	
+	
+	<record id="kg_category_mail_form" model="ir.ui.view">
+			<field name="name">Category Count</field>
+			<field name="model">kg.category.mail</field>
+			<field name="arch" type="xml">
+				<form string="Category Count" version="7.0">
+					<header>
+						<button name="notification_to_user" type="object" string="Count"/>
+						
+					</header>								   
+				</form>
+			</field> 
+		</record>
+<record id="kg_category_mail_form_action" model="ir.actions.act_window">
+			<field name="name">Category Count</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">kg.category.mail</field>
+			<field name="view_type">form</field>
+			<field name="view_id" ref="kg_category_mail_form"/>
+		</record>
+
+		
+	
+<menuitem action="kg_category_mail_form_action" id="kg_category_mail_menu_status" parent="kg_notification.kg_notification_menu_sub" name="Categorywise Count" sequence="3"/>	
+	
+
+</data>
+	</openerp>

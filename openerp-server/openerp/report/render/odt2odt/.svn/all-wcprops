@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/report/render/odt2odt
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/report/render/odt2odt/__init__.py
+END
+odt2odt.py
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/report/render/odt2odt/odt2odt.py
+END

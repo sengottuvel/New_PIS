@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/hr_expense
+END
+hr.expense.expense.csv
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/hr_expense/hr.expense.expense.csv
+END
+board_hr_expense_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/hr_expense/board_hr_expense_view.xml
+END
+hr_expense_demo.xml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/hr_expense/hr_expense_demo.xml
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/hr_expense/__init__.py
+END
+hr_expense_installer_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/hr_expense/hr_expense_installer_view.xml
+END
+hr_expense.py
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/hr_expense/hr_expense.py
+END
+hr_expense_sequence.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/hr_expense/hr_expense_sequence.xml
+END
+hr_expense_data.xml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/hr_expense/hr_expense_data.xml
+END
+__init__.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/hr_expense/__init__.pyc
+END
+hr_expense_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/hr_expense/hr_expense_view.xml
+END
+hr_expense_workflow.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/hr_expense/hr_expense_workflow.xml
+END
+hr_expense.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/hr_expense/hr_expense.pyc
+END
+hr_expense_report.xml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/hr_expense/hr_expense_report.xml
+END
+__openerp__.py
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/hr_expense/__openerp__.py
+END

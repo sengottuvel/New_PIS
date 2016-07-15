@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/account_followup/security
+END
+ir.model.access.csv
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/account_followup/security/ir.model.access.csv
+END
+account_followup_security.xml
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/account_followup/security/account_followup_security.xml
+END

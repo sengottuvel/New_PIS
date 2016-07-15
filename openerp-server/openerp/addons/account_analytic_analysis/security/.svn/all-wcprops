@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/account_analytic_analysis/security
+END
+account_analytic_analysis_security.xml
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/account_analytic_analysis/security/account_analytic_analysis_security.xml
+END
+ir.model.access.csv
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/account_analytic_analysis/security/ir.model.access.csv
+END

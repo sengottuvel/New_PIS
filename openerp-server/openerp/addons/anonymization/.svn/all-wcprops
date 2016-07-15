@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/anonymization
+END
+anonymization_demo.xml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/anonymization/anonymization_demo.xml
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/anonymization/__init__.py
+END
+anonymization.py
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/anonymization/anonymization.py
+END
+ir.model.fields.anonymization.csv
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/anonymization/ir.model.fields.anonymization.csv
+END
+anonymization_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/anonymization/anonymization_view.xml
+END
+__openerp__.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/anonymization/__openerp__.py
+END

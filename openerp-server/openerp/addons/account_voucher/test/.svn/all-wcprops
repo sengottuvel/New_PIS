@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/account_voucher/test
+END
+case2_suppl_usd_eur.yml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/account_voucher/test/case2_suppl_usd_eur.yml
+END
+case4_cad_chf.yml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/account_voucher/test/case4_cad_chf.yml
+END
+account_voucher.yml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/account_voucher/test/account_voucher.yml
+END
+case5_suppl_usd_usd.yml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/account_voucher/test/case5_suppl_usd_usd.yml
+END
+case1_usd_usd_payment_rate.yml
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/account_voucher/test/case1_usd_usd_payment_rate.yml
+END
+case_eur_usd.yml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/account_voucher/test/case_eur_usd.yml
+END
+account_voucher_report.yml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/account_voucher/test/account_voucher_report.yml
+END
+case1_usd_usd.yml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/account_voucher/test/case1_usd_usd.yml
+END
+sales_receipt.yml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/account_voucher/test/sales_receipt.yml
+END
+case2_usd_eur_debtor_in_eur.yml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/account_voucher/test/case2_usd_eur_debtor_in_eur.yml
+END
+case2_usd_eur_debtor_in_usd.yml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/account_voucher/test/case2_usd_eur_debtor_in_usd.yml
+END
+case3_eur_eur.yml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/account_voucher/test/case3_eur_eur.yml
+END
+sales_payment.yml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/account_voucher/test/sales_payment.yml
+END

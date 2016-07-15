@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/base_vat
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/base_vat/__init__.py
+END
+res_company.py
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/base_vat/res_company.py
+END
+__openerp__.py
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/base_vat/__openerp__.py
+END
+base_vat.py
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/base_vat/base_vat.py
+END
+base_vat_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/base_vat/base_vat_view.xml
+END

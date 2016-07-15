@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/point_of_sale/test
+END
+01_order_to_payment.yml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/point_of_sale/test/01_order_to_payment.yml
+END
+02_order_to_invoice.yml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/point_of_sale/test/02_order_to_invoice.yml
+END
+point_of_sale_report.yml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/point_of_sale/test/point_of_sale_report.yml
+END
+00_register_open.yml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/point_of_sale/test/00_register_open.yml
+END

@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/base_import
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/base_import/__init__.py
+END
+__init__.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/base_import/__init__.pyc
+END
+test_models.py
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/base_import/test_models.py
+END
+models.py
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/base_import/models.py
+END
+__openerp__.py
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/base_import/__openerp__.py
+END
+test_models.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/base_import/test_models.pyc
+END
+controllers.py
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/base_import/controllers.py
+END
+models.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/base_import/models.pyc
+END
+controllers.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/base_import/controllers.pyc
+END

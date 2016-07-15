@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/hr_attendance/wizard
+END
+hr_attendance_bymonth_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/hr_attendance/wizard/hr_attendance_bymonth_view.xml
+END
+hr_attendance_byweek.py
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/hr_attendance/wizard/hr_attendance_byweek.py
+END
+hr_attendance_byweek_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/hr_attendance/wizard/hr_attendance_byweek_view.xml
+END
+hr_attendance_error.py
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/hr_attendance/wizard/hr_attendance_error.py
+END
+hr_attendance_error_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/hr_attendance/wizard/hr_attendance_error_view.xml
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/hr_attendance/wizard/__init__.py
+END
+hr_attendance_bymonth.py
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/hr_attendance/wizard/hr_attendance_bymonth.py
+END

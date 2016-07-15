@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/jasper_reports
+END
+jasper_demo.xml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/jasper_reports/jasper_demo.xml
+END
+__init__.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/jasper_reports/__init__.pyc
+END
+jasper_report.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/jasper_reports/jasper_report.pyc
+END
+__openerp__.py
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/jasper_reports/__openerp__.py
+END
+http_server.py
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/jasper_reports/http_server.py
+END
+http_server.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/jasper_reports/http_server.pyc
+END
+report_xml.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/jasper_reports/report_xml.py
+END
+jasper_wizard.xml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/jasper_reports/jasper_wizard.xml
+END
+report_xml_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/jasper_reports/report_xml_view.xml
+END
+report_xml.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/jasper_reports/report_xml.pyc
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/jasper_reports/__init__.py
+END
+jasper_report.py
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/jasper_reports/jasper_report.py
+END

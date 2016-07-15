@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/portal_crm
+END
+__openerp__.py
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/portal_crm/__openerp__.py
+END
+contact.py
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/portal_crm/contact.py
+END
+contact_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/portal_crm/contact_view.xml
+END
+contact.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/portal_crm/contact.pyc
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/portal_crm/__init__.py
+END
+__init__.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/portal_crm/__init__.pyc
+END

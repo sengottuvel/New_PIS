@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/l10n_hr/data
+END
+account.account.type.csv
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/l10n_hr/data/account.account.type.csv
+END
+account.tax.code.template.csv
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/l10n_hr/data/account.tax.code.template.csv
+END
+account.account.template.csv
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/l10n_hr/data/account.account.template.csv
+END
+account.tax.template.csv
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/l10n_hr/data/account.tax.template.csv
+END
+fiscal_position_template.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/l10n_hr/data/fiscal_position_template.xml
+END

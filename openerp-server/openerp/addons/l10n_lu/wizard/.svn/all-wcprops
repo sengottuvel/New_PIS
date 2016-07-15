@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/l10n_lu/wizard
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/l10n_lu/wizard/__init__.py
+END
+TVA_MEN_09_xxxx.pdf
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/l10n_lu/wizard/TVA_MEN_09_xxxx.pdf
+END
+print_vat.py
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/l10n_lu/wizard/print_vat.py
+END
+TVA_TRI_10_xxxx.pdf
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/l10n_lu/wizard/TVA_TRI_10_xxxx.pdf
+END
+print_vat_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/l10n_lu/wizard/print_vat_view.xml
+END
+pdf_ext.py
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/l10n_lu/wizard/pdf_ext.py
+END

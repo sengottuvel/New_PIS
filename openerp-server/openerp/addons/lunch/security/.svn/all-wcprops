@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/lunch/security
+END
+lunch_security.xml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/lunch/security/lunch_security.xml
+END
+ir.model.access.csv
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/lunch/security/ir.model.access.csv
+END

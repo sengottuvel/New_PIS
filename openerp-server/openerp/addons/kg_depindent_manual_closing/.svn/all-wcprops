@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/KGTrust_ERP/!svn/ver/830/openerp-server/openerp/addons/kg_depindent_manual_closing
+END
+kg_depindent_manual_closing.xml
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/KGTrust_ERP/!svn/ver/689/openerp-server/openerp/addons/kg_depindent_manual_closing/kg_depindent_manual_closing.xml
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/KGTrust_ERP/!svn/ver/689/openerp-server/openerp/addons/kg_depindent_manual_closing/__init__.py
+END
+__openerp__.py
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/KGTrust_ERP/!svn/ver/830/openerp-server/openerp/addons/kg_depindent_manual_closing/__openerp__.py
+END
+kg_depindent_manual_closing.py
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/KGTrust_ERP/!svn/ver/689/openerp-server/openerp/addons/kg_depindent_manual_closing/kg_depindent_manual_closing.py
+END

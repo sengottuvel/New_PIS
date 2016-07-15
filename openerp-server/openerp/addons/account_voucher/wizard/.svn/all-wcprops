@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/account_voucher/wizard
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/account_voucher/wizard/__init__.py
+END
+account_statement_from_invoice.py
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/account_voucher/wizard/account_statement_from_invoice.py
+END
+account_statement_from_invoice_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/account_voucher/wizard/account_statement_from_invoice_view.xml
+END

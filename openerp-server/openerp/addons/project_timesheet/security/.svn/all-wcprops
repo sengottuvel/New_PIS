@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/project_timesheet/security
+END
+ir.model.access.csv
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/project_timesheet/security/ir.model.access.csv
+END
+project_timesheet_security.xml
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/project_timesheet/security/project_timesheet_security.xml
+END

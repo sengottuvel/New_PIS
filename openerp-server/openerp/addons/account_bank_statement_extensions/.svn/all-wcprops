@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/account_bank_statement_extensions
+END
+account_bank_statement.py
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/account_bank_statement_extensions/account_bank_statement.py
+END
+account_bank_statement_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/account_bank_statement_extensions/account_bank_statement_view.xml
+END
+account_bank_statement_report.xml
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/account_bank_statement_extensions/account_bank_statement_report.xml
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/account_bank_statement_extensions/__init__.py
+END
+res_partner_bank.py
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/account_bank_statement_extensions/res_partner_bank.py
+END
+__openerp__.py
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/account_bank_statement_extensions/__openerp__.py
+END

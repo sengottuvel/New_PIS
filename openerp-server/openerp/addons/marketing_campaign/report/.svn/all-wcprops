@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/marketing_campaign/report
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/marketing_campaign/report/__init__.py
+END
+campaign_analysis.py
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/marketing_campaign/report/campaign_analysis.py
+END
+campaign_analysis_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/marketing_campaign/report/campaign_analysis_view.xml
+END

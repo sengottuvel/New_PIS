@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/portal_project_issue/tests
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/portal_project_issue/tests/__init__.py
+END
+test_access_rights.py
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/portal_project_issue/tests/test_access_rights.py
+END

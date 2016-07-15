@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/document_page/wizard
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/document_page/wizard/__init__.py
+END
+document_page_create_menu.py
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/document_page/wizard/document_page_create_menu.py
+END
+document_page_show_diff.py
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/document_page/wizard/document_page_show_diff.py
+END
+document_page_create_menu_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/document_page/wizard/document_page_create_menu_view.xml
+END
+document_page_show_diff_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/document_page/wizard/document_page_show_diff_view.xml
+END

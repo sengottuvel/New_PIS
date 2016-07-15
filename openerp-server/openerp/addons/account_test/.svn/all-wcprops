@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/account_test
+END
+account_test_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/account_test/account_test_view.xml
+END
+account_test_report.xml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/account_test/account_test_report.xml
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/account_test/__init__.py
+END
+__openerp__.py
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/account_test/__openerp__.py
+END
+account_test.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/account_test/account_test.py
+END
+account_test_data.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/account_test/account_test_data.xml
+END

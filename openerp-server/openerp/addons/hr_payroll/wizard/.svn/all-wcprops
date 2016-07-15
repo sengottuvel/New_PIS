@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/hr_payroll/wizard
+END
+hr_payroll_contribution_register_report.py
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/hr_payroll/wizard/hr_payroll_contribution_register_report.py
+END
+hr_payroll_payslips_by_employees.py
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/hr_payroll/wizard/hr_payroll_payslips_by_employees.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/hr_payroll/wizard/__init__.py
+END
+hr_payroll_contribution_register_report.xml
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/hr_payroll/wizard/hr_payroll_contribution_register_report.xml
+END
+hr_payroll_payslips_by_employees.xml
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/hr_payroll/wizard/hr_payroll_payslips_by_employees.xml
+END

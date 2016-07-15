@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/tests/addons/test_uninstall
+END
+ir.model.access.csv
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/tests/addons/test_uninstall/ir.model.access.csv
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/tests/addons/test_uninstall/__init__.py
+END
+models.py
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/tests/addons/test_uninstall/models.py
+END
+__openerp__.py
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/tests/addons/test_uninstall/__openerp__.py
+END

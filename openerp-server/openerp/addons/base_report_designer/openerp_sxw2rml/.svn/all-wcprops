@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/base_report_designer/openerp_sxw2rml
+END
+normalized_odt2rml.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/base_report_designer/openerp_sxw2rml/normalized_odt2rml.xsl
+END
+openerp_sxw2rml.py
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/base_report_designer/openerp_sxw2rml/openerp_sxw2rml.py
+END
+normalized_oo2rml.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/base_report_designer/openerp_sxw2rml/normalized_oo2rml.xsl
+END
+office.dtd
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/base_report_designer/openerp_sxw2rml/office.dtd
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/base_report_designer/openerp_sxw2rml/__init__.py
+END

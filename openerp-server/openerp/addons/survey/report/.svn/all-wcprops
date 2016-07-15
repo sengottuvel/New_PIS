@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/survey/report
+END
+survey_analysis_report.py
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/survey/report/survey_analysis_report.py
+END
+survey_browse_response.py
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/survey/report/survey_browse_response.py
+END
+survey_analysis_report.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/survey/report/survey_analysis_report.pyc
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/survey/report/__init__.py
+END
+survey_browse_response.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/survey/report/survey_browse_response.pyc
+END
+survey_form.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/survey/report/survey_form.py
+END
+__init__.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/survey/report/__init__.pyc
+END
+survey_form.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/survey/report/survey_form.pyc
+END

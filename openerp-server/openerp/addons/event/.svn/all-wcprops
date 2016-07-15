@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/event
+END
+event_demo.xml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/event/event_demo.xml
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/event/__init__.py
+END
+event.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/event/event.py
+END
+__init__.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/event/__init__.pyc
+END
+event_data.xml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/event/event_data.xml
+END
+event_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/event/event_view.xml
+END
+__openerp__.py
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/event/__openerp__.py
+END
+res_partner.py
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/event/res_partner.py
+END
+event.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/event/event.pyc
+END
+board_association_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/event/board_association_view.xml
+END
+res_partner_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/event/res_partner_view.xml
+END
+res_partner.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/event/res_partner.pyc
+END
+email_template.xml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/event/email_template.xml
+END

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/account_accountant
+END
+account_accountant_data.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/account_accountant/account_accountant_data.xml
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/account_accountant/__init__.py
+END
+__init__.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/account_accountant/__init__.pyc
+END
+__openerp__.py
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/account_accountant/__openerp__.py
+END
+account_accountant_demo.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/account_accountant/account_accountant_demo.xml
+END

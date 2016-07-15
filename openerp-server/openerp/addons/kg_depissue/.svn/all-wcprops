@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/kg_depissue
+END
+__openerp__.py
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/kg_depissue/__openerp__.py
+END
+kg_depissue_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/kg_depissue/kg_depissue_view.xml
+END
+kg_depissue.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/kg_depissue/kg_depissue.pyc
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/kg_depissue/__init__.py
+END
+__init__.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/kg_depissue/__init__.pyc
+END
+kg_depissue.py
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/kg_depissue/kg_depissue.py
+END

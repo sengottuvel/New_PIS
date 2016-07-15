@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+	
+	
+	<record id="kg_gate_pass_pending_mail_form" model="ir.ui.view">
+			<field name="name">Pending Gate Pass Alert</field>
+			<field name="model">kg.gate.pass.pending.mail</field>
+			<field name="arch" type="xml">
+				<form string="Pending Gate Pass Alert" version="7.0">
+					<header>
+						<button name="notification_to_user" type="object" string="Count"/>
+						
+					</header>								   
+				</form>
+			</field> 
+		</record>
+<record id="kg_gate_pass_pending_mail_form_action" model="ir.actions.act_window">
+			<field name="name">Pending Gate Pass Alert</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">kg.gate.pass.pending.mail</field>
+			<field name="view_type">form</field>
+			<field name="view_id" ref="kg_gate_pass_pending_mail_form"/>
+		</record>
+
+		
+<menuitem action="kg_gate_pass_pending_mail_form_action" id="kg_gate_pass_pending_mail_menu_status" parent="kg_notification.kg_notification_menu_sub" name="Gate Pass Pending Report" sequence="4"/>	
+	
+
+</data>
+	</openerp>

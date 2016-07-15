@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/decimal_precision
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/decimal_precision/__init__.py
+END
+__init__.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/decimal_precision/__init__.pyc
+END
+__openerp__.py
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/decimal_precision/__openerp__.py
+END
+decimal_precision.py
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/decimal_precision/decimal_precision.py
+END
+decimal_precision_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/decimal_precision/decimal_precision_view.xml
+END
+decimal_precision.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/decimal_precision/decimal_precision.pyc
+END

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+<!--form view starts-->
+		
+		<record id ='t_form_v_direct_expense' model='ir.ui.view'>
+			<field name='name'>Direct Expense Entry</field>
+			<field name='model'>direct.entry.expense</field>
+			<field name='arch' type='xml'>
+			<form string='Direct Expense Entry' version='7.0' >					
+					<header>						
+						<button name="entry_reject" type="object" string="Cancel" state="confirm" attrs="{'invisible':[('state','in',('reject','confirm','draft'))]}" class="oe_highlight"  confirm="Are you sure to proceed ?" groups="kg_inventory_users.group_kg_main_user"/>
+						<button name="entry_approve" type="object" string="Approve" state="approved" attrs="{'invisible':[('state','in',('draft','approved'))]}" class="oe_highlight"  confirm="Are you sure to proceed ?" groups="kg_inventory_users.group_kg_main_user"/>				
+						<button name="entry_confirm" type="object" string="Confirm" state="draft" attrs="{'invisible':[('state','in',('reject','confirm','approved'))]}" class="oe_highlight"/>
+						<field name="state" widget="statusbar" statusbar_visible="draft,approved,confirm,reject" statusbar_colors='{"draft":"blue","approved":"blue","confirm":"red","reject":"red"}' readonly="1"/>
+					</header>				
+						<group>
+							<group>								
+								<field name='name' readonly="1"/>
+								<field name='invoice_no' required ="True" attrs="{'readonly': [('state','in',('approved','reject'))]}"/>
+								<field name='supplier_id' on_change="onchange_supplier(supplier_id)" required ="True"  attrs="{'readonly': [('state','in',('approved','reject'))]}" />
+								<field name='project_id' required ="True" attrs="{'readonly': [('state','in',('approved','reject'))]}"/>							
+							</group>
+							<group >
+								<field name='expense_date' required ="True" attrs="{'readonly': [('state','in',('approved','reject'))]}"/>
+								<field name='invoice_date' required ="True" attrs="{'readonly': [('state','in',('approved','reject'))]}"/>
+								<field name='Supplier_add' readonly="0" attrs="{'readonly': [('state','in',('approved','reject'))]}"/>								
+								<field name='payment_type' readonly="0" attrs="{'readonly': [('state','in',('approved','reject'))]}"/>								
+							</group>
+						</group>
+						<notebook>
+							<page string='Expenses' >								
+									<field name='line_ids' nolabel="1" attrs="{'readonly': [('state','in',['approved','reject'])]}" >										
+										<tree editable="bottom">
+											<field name = 'exp_des' required="True" />
+											<field name = 'tax_id' widget='many2many_tags' />
+											<field name = 'dis_amt' />
+											<field name = 'total_amt' sum='Total amount' required="True" />											
+										</tree>																
+									</field>								
+									<group class="oe_subtotal_footer oe_right">										
+										<field name="discount"/>
+										<field name="amount_untaxed" widget="monetary" options="{'currency_field': 'currency_id'}"/>
+										<field name="amount_tax" widget="monetary" options="{'currency_field': 'currency_id'}"/>
+										<div class="oe_subtotal_footer_separator oe_inline">
+										<label for="amount_total"/>
+										</div>
+										<field name="amount_total" nolabel="1" class="oe_subtotal_footer_separator" widget="monetary" options="{'currency_field': 'currency_id'}"/>
+									</group>
+							</page>							
+							<page string="Entry Info">								
+								<group>
+									<group>
+										<field name="user_id"/>
+										<field name="confirm_user_id" attrs="{'invisible':[('state','in',['draft'])]}"/>
+										<field name="app_user_id" attrs="{'invisible':[('state','in',['draft', 'confirm'])]}"/>
+										<field name="rej_user_id" attrs="{'invisible':[('state','in',['draft', 'confirm','approved'])]}"/>										
+									</group>
+									<group>
+										<field name="crt_date"/>
+										<field name="confirm_date" attrs="{'invisible':[('state','in',['draft'])]}"/>
+										<field name="approve_date" attrs="{'invisible':[('state','in',['draft', 'confirm'])]}"/>
+										<field name="reject_date" attrs="{'invisible':[('state','in',['draft', 'confirm','approved'])]}"/>																				
+									</group>
+								</group>
+							</page>	
+							<page string="Remarks" >
+								<group>
+									<field name="remark" attrs="{'invisible':[('state','=','draft')], 'readonly': [('state','in',['reject','cancel'])]}"/>
+								</group>
+							</page>												
+						</notebook>										
+			</form>
+			</field>
+		</record>
+
+<!--form view ends-->
+
+<!--tree view starts-->
+
+		<record id='t_tree_v_direct_expense' model='ir.ui.view'>
+			<field name='name'>Direct Expense Entry</field>
+			<field name='model'>direct.entry.expense</field>
+			<field eval='8' name='priority'/>
+			<field name ='arch' type='xml'>
+				<tree colors="Blue:state=='draft';gray:state=='reject';black:state=='approved';red:state=='confirm'" toolbar="True" string="Direct Expense Entry">
+					<field name='name'/>
+					<field name='expense_date'/>
+					<field name='invoice_no'/>
+					<field name='invoice_date'/>
+					<field name='project_id'/>
+					<field name='supplier_id'/>
+					<field name="amount_total"/>
+					<field name = 'state'/>
+				</tree>
+			</field>
+		</record>
+		
+<!--tree view ends-->
+		
+<!--search view starts-->
+
+		<record id="t_search_v_direct_expense" model="ir.ui.view">
+            <field name="name">Direct Expense Entry Search</field>
+            <field name="model">direct.entry.expense</field>
+            <field name="arch" type="xml">
+                <search string="Sample Search">
+					<filter icon="terp-check" name="draft" string="Draft" domain="[('state','=','draft')]"/>
+					<filter icon="terp-check" name="draft" string="Confirmed" domain="[('state','=','confirm')]"/>
+					<filter icon="terp-check" name="draft" string="Approved" domain="[('state','=','approved')]"/>
+					<filter icon="terp-check" name="draft" string="Cancelled" domain="[('state','=','reject')]"/>											
+					<separator/>
+                    <group expand="0" string="Group By...">
+						<field name="supplier_id" filter_domain="[('supplier_id','child_of',[self])]"/>
+                        <filter string="Supplier Name" icon="terp-gtk-select-all" domain="[]" context="{'group_by':'supplier_id'}"/>
+                        <filter string="Status" icon="terp-gtk-select-all" domain="[]" context="{'group_by':'state'}"/>
+                        <filter string="Project Name" icon="terp-gtk-select-all" domain="[]" context="{'group_by':'project_id'}"/>                        
+                        <filter string="Expense Date" icon="terp-gtk-select-all" domain="[]" context="{'group_by':'expense_date'}"/>                        
+                                                
+					</group>
+                </search>
+			</field>
+		</record>
+		
+<!--search view ends-->
+            
+<!--menu action starts-->
+		<record id='tma_direct_expense' model='ir.actions.act_window'>
+			<field name='name'>Direct Expense Entry</field>
+			<field name='type'>ir.actions.act_window</field>
+			<field name='res_model'>direct.entry.expense</field>
+			<field name='view_type'>form</field>
+			<field name='view_id' ref='t_tree_v_direct_expense'/>
+			<field name="search_view_id" ref="t_search_v_direct_expense"/>		
+
+		</record>	
+<!--menu action ends-->
+
+<!--menu items starts-->
+		<menuitem id="tmi_direct_expense_entry" parent="kg_menus.kg_cash_voucher_menu" sequence="7" action="tma_direct_expense" />		
+<!--menu item ends-->	
+	</data>
+</openerp>

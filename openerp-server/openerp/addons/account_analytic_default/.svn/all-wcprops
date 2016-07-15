@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/account_analytic_default
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/account_analytic_default/__init__.py
+END
+__init__.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/account_analytic_default/__init__.pyc
+END
+__openerp__.py
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/account_analytic_default/__openerp__.py
+END
+account_analytic_default.py
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/account_analytic_default/account_analytic_default.py
+END
+account_analytic_default_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/account_analytic_default/account_analytic_default_view.xml
+END
+account_analytic_default.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/account_analytic_default/account_analytic_default.pyc
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/multi_company
+END
+multi_company_demo.xml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/multi_company/multi_company_demo.xml
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/multi_company/__init__.py
+END
+res_company_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/multi_company/res_company_view.xml
+END
+__openerp__.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/multi_company/__openerp__.py
+END

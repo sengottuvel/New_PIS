@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/web/static/test
+END
+testing.js
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/web/static/test/testing.js
+END
+list-editable.js
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/web/static/test/list-editable.js
+END
+Widget.js
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/web/static/test/Widget.js
+END
+rpc.js
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/web/static/test/rpc.js
+END
+fulltest.html
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/web/static/test/fulltest.html
+END
+mutex.js
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/web/static/test/mutex.js
+END
+form.js
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/web/static/test/form.js
+END
+qunit-doc.js
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/web/static/test/qunit-doc.js
+END
+class.js
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/web/static/test/class.js
+END
+search.js
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/web/static/test/search.js
+END
+registry.js
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/web/static/test/registry.js
+END
+data.js
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/web/static/test/data.js
+END
+list-utils.js
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/web/static/test/list-utils.js
+END
+evals.js
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/web/static/test/evals.js
+END
+formats.js
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/web/static/test/formats.js
+END
+list.js
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/web/static/test/list.js
+END

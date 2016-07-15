@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/mrp/test
+END
+order_demo.yml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/mrp/test/order_demo.yml
+END
+cancel_order.yml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/mrp/test/cancel_order.yml
+END
+order_process.yml
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/mrp/test/order_process.yml
+END

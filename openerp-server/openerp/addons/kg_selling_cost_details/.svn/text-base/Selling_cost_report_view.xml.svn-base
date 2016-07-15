@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+    
+
+		<report string="Selling cost Slip"
+        model="kg.selling.cost.details"
+        auto="True"
+        name="onscreen_selling_cost_report"
+        rml="kg_selling_cost_details/report/Selling_cost.jrxml"
+        id="selling_cost_jasper_reports" 
+        menu="True"
+        header="False"
+        />
+
+
+    </data>
+</openerp>

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/crm_profiling/wizard
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/crm_profiling/wizard/__init__.py
+END
+open_questionnaire.py
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/crm_profiling/wizard/open_questionnaire.py
+END
+open_questionnaire_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/crm_profiling/wizard/open_questionnaire_view.xml
+END

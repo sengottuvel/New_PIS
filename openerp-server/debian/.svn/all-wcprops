@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/debian
+END
+compat
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/debian/compat
+END
+changelog
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/debian/changelog
+END
+copyright
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/debian/copyright
+END
+openerp.init
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/debian/openerp.init
+END
+openerp.postinst
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/debian/openerp.postinst
+END
+rules
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/debian/rules
+END
+openerp.postrm
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/debian/openerp.postrm
+END
+openerp.install
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/debian/openerp.install
+END
+control
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/debian/control
+END

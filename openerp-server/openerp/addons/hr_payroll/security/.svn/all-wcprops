@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/hr_payroll/security
+END
+hr_security.xml
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/hr_payroll/security/hr_security.xml
+END
+ir.model.access.csv
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/hr_payroll/security/ir.model.access.csv
+END

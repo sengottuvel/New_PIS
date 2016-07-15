@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/sale_stock
+END
+__openerp__.py
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/sale_stock/__openerp__.py
+END
+company.py
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/sale_stock/company.py
+END
+company_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/sale_stock/company_view.xml
+END
+company.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/sale_stock/company.pyc
+END
+res_config.py
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/sale_stock/res_config.py
+END
+res_config_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/sale_stock/res_config_view.xml
+END
+res_config.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/sale_stock/res_config.pyc
+END
+stock.py
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/sale_stock/stock.py
+END
+stock_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/sale_stock/stock_view.xml
+END
+stock.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/sale_stock/stock.pyc
+END
+sale_stock.py
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/sale_stock/sale_stock.py
+END
+sale_stock_data.xml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/sale_stock/sale_stock_data.xml
+END
+sale_stock_workflow.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/sale_stock/sale_stock_workflow.xml
+END
+sale_stock_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/sale_stock/sale_stock_view.xml
+END
+sale_stock.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/sale_stock/sale_stock.pyc
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/sale_stock/__init__.py
+END
+__init__.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/sale_stock/__init__.pyc
+END
+sale_stock_demo.xml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/sale_stock/sale_stock_demo.xml
+END

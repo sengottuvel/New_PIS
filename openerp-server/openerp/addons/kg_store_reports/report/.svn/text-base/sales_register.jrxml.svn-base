@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="sales_register" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="191"/>
+	<subDataset name="Cash Summary">
+		<parameter name="sal_type" class="java.lang.String"/>
+		<parameter name="from_date" class="java.lang.String"/>
+		<parameter name="to_date" class="java.lang.String"/>
+		<queryString>
+			<![CDATA[select to_char(date_order,'dd-Mon-yyyy') as date_order,count(*),sum(amount_total) as amount_total from sale_order
+where state='done' and sale_type = $P{sal_type}
+and to_char(date_order,'yyyy-mm-dd') >= $P{from_date}  and to_char(date_order,'yyyy-mm-dd')  <= $P{to_date} group by date_order order by date_order desc]]>
+		</queryString>
+		<field name="date_order" class="java.lang.String"/>
+		<field name="count" class="java.lang.Long"/>
+		<field name="amount_total" class="java.math.BigDecimal"/>
+	</subDataset>
+	<subDataset name="Overall">
+		<parameter name="sal_type" class="java.lang.String"/>
+		<parameter name="from_date" class="java.lang.String"/>
+		<parameter name="to_date" class="java.lang.String"/>
+		<queryString>
+			<![CDATA[select distinct sale_order.sale_type, count(*) OVER (PARTITION by sale_type) as count,sum(amount_total) OVER (PARTITION by sale_type) as total from sale_order where state='done' and sale_type in ('cash','credit')  and to_char(date_order,'yyyy-mm-dd') >= $P{from_date} and to_char(date_order,'yyyy-mm-dd')  <= $P{to_date} order by 1]]>
+		</queryString>
+		<field name="sale_type" class="java.lang.String"/>
+		<field name="count" class="java.lang.Long"/>
+		<field name="total" class="java.math.BigDecimal"/>
+		<variable name="Total_value" class="java.math.BigDecimal" resetType="None" calculation="Sum">
+			<variableExpression><![CDATA[$F{total}]]></variableExpression>
+		</variable>
+	</subDataset>
+	<subDataset name="Total">
+		<parameter name="from_date" class="java.lang.String">
+			<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+		</parameter>
+		<parameter name="to_date" class="java.lang.String">
+			<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+		</parameter>
+		<queryString>
+			<![CDATA[select sum(amount_total) as total from sale_order where state='done' and sale_type in ('cash','credit')  and to_char(date_order,'yyyy-mm-dd') >= $P{from_date} and to_char(date_order,'yyyy-mm-dd')  <= $P{to_date} order by 1]]>
+		</queryString>
+		<field name="total" class="java.math.BigDecimal"/>
+	</subDataset>
+	<parameter name="m_from_date" class="java.lang.String">
+		<defaultValueExpression><![CDATA[2015-11-25]]></defaultValueExpression>
+	</parameter>
+	<parameter name="m_to_date" class="java.lang.String">
+		<defaultValueExpression><![CDATA[2015-12-21]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_from_date" class="java.lang.String"/>
+	<parameter name="p_to_date" class="java.lang.String"/>
+	<parameter name="user_id" class="java.lang.Integer">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="user_name" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[select distinct date_order,sal_type,sam_cash as cash_count,sam_credit as credit_count,sum_cash as cash_subtot,sum_credit as credit_subtot,company_name,street1,street2,zip,city,email,new_date,
+sum(sum_cash) OVER (PARTITION by sal_type = 'cash') as cash_gndtot,
+sum(sum_credit) OVER (PARTITION by sal_type = 'credit') as credit_gndtot
+ from (
+select
+case when cash1_cnt = 'cash' then
+(count(cash1_cnt) OVER (PARTITION by cash1_cnt = 'cash',date_order)) else 0 end as sam_cash,
+case when credit1_cnt = 'credit' then
+count(credit1_cnt) OVER (PARTITION by credit1_cnt = 'credit',date_order) else 0 end as sam_credit,
+case when cash1_cnt = 'cash' then
+(sum(cash1_amt) OVER (PARTITION by cash1_cnt = 'cash',date_order)) else 0 end as sum_cash,
+case when credit1_cnt = 'credit' then
+sum(credit1_amt) OVER (PARTITION by credit1_cnt = 'credit',date_order) else 0 end as sum_credit,
+credit1_amt,
+* from (
+select
+distinct
+case when sale_type = 'cash' then
+sale_type else 'NO' end as cash1_cnt,
+case when sale_type = 'credit' then
+sale_type else 'NO' end as credit1_cnt,
+case when sale_type = 'cash' then
+amount_total else 0.00 end as cash1_amt,
+case when sale_type = 'credit' then
+amount_total else 0.00 end as credit1_amt,
+count(*) OVER (partition by so.date_order,sale_type = 'cash') as cash_cnt,
+count(*) OVER (partition by so.date_order,sale_type = 'credit') as credit_cnt,
+count(*) OVER (partition by sale_type = 'cash') as tot_cash_cnt,
+count(*) OVER (partition by sale_type = 'credit') as tot_credit_cnt,
+sale_type as sal_type,
+so.create_uid as user_id,
+---so.id as sm_id,
+to_char(so.date_order,'dd-Mon-yyyy') as date_order,
+so.date_order as so_date_order,
+so.amount_total,
+comp.name as company_name,
+comp.logo_web as logo,
+part.street as street1,
+part.street2 as street2,
+comp_city.name as city,
+part.zip as zip,
+part.phone as phone,
+part.fax as fax,
+part.email as email,
+to_char(so.date_order::date,'dd-mm-YYYY') as so_date,
+to_char(CURRENT_TIMESTAMP, 'DD-MM-YYYY HH12:MI:SS AM') AS New_Date,
+user_part.name as user_name
+from sale_order so
+left join res_users users on (users.id = $P{user_id})
+left join res_partner user_part on (user_part.id = users.partner_id)
+left join res_company comp on (comp.id = so.company_id)
+left join res_partner part on (part.id = comp.partner_id)
+left join res_city comp_city on (comp_city.id = comp.city)
+where so.state='done' and sale_type in ('credit','cash')
+and to_char(so.date_order,'yyyy-mm-dd') >= $P{m_from_date}::text and to_char(so.date_order,'yyyy-mm-dd')  <= $P{m_to_date}::text
+order by sale_type,so.date_order desc
+) as sam
+order by sal_type,date_order
+) as sample order by sal_type,date_order desc]]>
+	</queryString>
+	<field name="date_order" class="java.lang.String"/>
+	<field name="sal_type" class="java.lang.String"/>
+	<field name="cash_count" class="java.lang.Long"/>
+	<field name="credit_count" class="java.lang.Long"/>
+	<field name="cash_subtot" class="java.math.BigDecimal"/>
+	<field name="credit_subtot" class="java.math.BigDecimal"/>
+	<field name="company_name" class="java.lang.String"/>
+	<field name="street1" class="java.lang.String"/>
+	<field name="street2" class="java.lang.String"/>
+	<field name="zip" class="java.lang.String"/>
+	<field name="city" class="java.lang.String"/>
+	<field name="email" class="java.lang.String"/>
+	<field name="new_date" class="java.lang.String"/>
+	<field name="cash_gndtot" class="java.math.BigDecimal"/>
+	<field name="credit_gndtot" class="java.math.BigDecimal"/>
+	<variable name="variable1" class="java.lang.String"/>
+	<variable name="credit_subtot_1" class="java.math.BigDecimal" resetType="Group" resetGroup="credit_gnd" calculation="Sum">
+		<variableExpression><![CDATA[$F{credit_subtot}]]></variableExpression>
+	</variable>
+	<variable name="cash_subtot_1" class="java.math.BigDecimal" resetType="Group" resetGroup="cash_gnd" calculation="Sum">
+		<variableExpression><![CDATA[$F{cash_subtot}]]></variableExpression>
+	</variable>
+	<group name="head">
+		<groupExpression><![CDATA[$F{company_name}]]></groupExpression>
+		<groupHeader>
+			<band height="97">
+				<componentElement>
+					<reportElement positionType="Float" x="0" y="50" width="300" height="25"/>
+					<jr:list xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" printOrder="Vertical">
+						<datasetRun subDataset="Overall">
+							<datasetParameter name="sal_type">
+								<datasetParameterExpression><![CDATA[$F{sal_type}]]></datasetParameterExpression>
+							</datasetParameter>
+							<datasetParameter name="from_date">
+								<datasetParameterExpression><![CDATA[$P{m_from_date}]]></datasetParameterExpression>
+							</datasetParameter>
+							<datasetParameter name="to_date">
+								<datasetParameterExpression><![CDATA[$P{m_to_date}]]></datasetParameterExpression>
+							</datasetParameter>
+							<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+						</datasetRun>
+						<jr:listContents height="25" width="300">
+							<textField>
+								<reportElement positionType="Float" x="0" y="0" width="100" height="25"/>
+								<box leftPadding="2">
+									<topPen lineWidth="0.5"/>
+									<leftPen lineWidth="0.5"/>
+									<bottomPen lineWidth="0.5"/>
+									<rightPen lineWidth="0.5"/>
+								</box>
+								<textElement/>
+								<textFieldExpression><![CDATA[$F{sale_type}]]></textFieldExpression>
+							</textField>
+							<textField>
+								<reportElement positionType="Float" x="100" y="0" width="100" height="25"/>
+								<box leftPadding="2">
+									<topPen lineWidth="0.5"/>
+									<leftPen lineWidth="0.5"/>
+									<bottomPen lineWidth="0.5"/>
+									<rightPen lineWidth="0.5"/>
+								</box>
+								<textElement/>
+								<textFieldExpression><![CDATA[$F{count}]]></textFieldExpression>
+							</textField>
+							<textField>
+								<reportElement positionType="Float" x="200" y="0" width="100" height="25"/>
+								<box rightPadding="2">
+									<topPen lineWidth="0.5"/>
+									<leftPen lineWidth="0.5"/>
+									<bottomPen lineWidth="0.5"/>
+									<rightPen lineWidth="0.5"/>
+								</box>
+								<textElement textAlignment="Right"/>
+								<textFieldExpression><![CDATA[$F{total}]]></textFieldExpression>
+							</textField>
+						</jr:listContents>
+					</jr:list>
+				</componentElement>
+				<textField>
+					<reportElement positionType="Float" x="0" y="0" width="300" height="20"/>
+					<textElement>
+						<font isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Cash & Credit Summary"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement positionType="Float" x="200" y="30" width="100" height="20"/>
+					<box rightPadding="2">
+						<topPen lineWidth="0.5"/>
+						<leftPen lineWidth="0.5"/>
+						<bottomPen lineWidth="0.5"/>
+						<rightPen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Amount"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement positionType="Float" x="0" y="30" width="100" height="20"/>
+					<box>
+						<topPen lineWidth="0.5"/>
+						<leftPen lineWidth="0.5"/>
+						<bottomPen lineWidth="0.5"/>
+						<rightPen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Payment Mode"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement positionType="Float" x="100" y="30" width="100" height="20"/>
+					<box>
+						<topPen lineWidth="0.5"/>
+						<leftPen lineWidth="0.5"/>
+						<bottomPen lineWidth="0.5"/>
+						<rightPen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["No.Of.Bills"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement positionType="Float" x="0" y="75" width="200" height="20"/>
+					<box leftPadding="2">
+						<topPen lineWidth="0.0"/>
+						<leftPen lineWidth="0.0"/>
+						<bottomPen lineWidth="0.0"/>
+						<rightPen lineWidth="0.0"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Total"]]></textFieldExpression>
+				</textField>
+				<componentElement>
+					<reportElement positionType="Float" x="200" y="75" width="100" height="22"/>
+					<jr:list xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" printOrder="Vertical">
+						<datasetRun subDataset="Total">
+							<datasetParameter name="from_date">
+								<datasetParameterExpression><![CDATA[$P{m_from_date}]]></datasetParameterExpression>
+							</datasetParameter>
+							<datasetParameter name="to_date">
+								<datasetParameterExpression><![CDATA[$P{m_to_date}]]></datasetParameterExpression>
+							</datasetParameter>
+							<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+						</datasetRun>
+						<jr:listContents height="22" width="100">
+							<textField>
+								<reportElement positionType="Float" x="0" y="0" width="100" height="20"/>
+								<textElement textAlignment="Right" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{total}]]></textFieldExpression>
+							</textField>
+						</jr:listContents>
+					</jr:list>
+				</componentElement>
+			</band>
+		</groupHeader>
+	</group>
+	<group name="detail head">
+		<groupExpression><![CDATA[$F{sal_type}]]></groupExpression>
+		<groupHeader>
+			<band height="44">
+				<textField>
+					<reportElement x="76" y="24" width="82" height="20"/>
+					<box leftPadding="2">
+						<topPen lineWidth="0.5"/>
+						<leftPen lineWidth="0.5"/>
+						<bottomPen lineWidth="0.5"/>
+						<rightPen lineWidth="0.5"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["No.Of.Bills"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="158" y="24" width="80" height="20"/>
+					<box rightPadding="2">
+						<topPen lineWidth="0.5"/>
+						<leftPen lineWidth="0.5"/>
+						<bottomPen lineWidth="0.5"/>
+						<rightPen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Amount"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="0" y="24" width="76" height="20"/>
+					<box leftPadding="2">
+						<topPen lineWidth="0.5"/>
+						<leftPen lineWidth="0.5"/>
+						<bottomPen lineWidth="0.5"/>
+						<rightPen lineWidth="0.5"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Date"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="0" y="4" width="555" height="20"/>
+					<box leftPadding="2"/>
+					<textElement>
+						<font isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{sal_type}+" - Summary (Datewise):"]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupHeader>
+	</group>
+	<group name="cash_gnd">
+		<groupExpression><![CDATA[$F{sal_type}]]></groupExpression>
+		<groupFooter>
+			<band height="20">
+				<printWhenExpression><![CDATA[$F{sal_type}.equals("cash")]]></printWhenExpression>
+				<textField>
+					<reportElement x="0" y="0" width="158" height="20"/>
+					<box leftPadding="2">
+						<topPen lineWidth="0.0"/>
+						<leftPen lineWidth="0.0"/>
+						<bottomPen lineWidth="0.0"/>
+						<rightPen lineWidth="0.0"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Total"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="158" y="0" width="80" height="20"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{cash_subtot_1}]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupFooter>
+	</group>
+	<group name="credit_gnd">
+		<groupExpression><![CDATA[$F{sal_type}]]></groupExpression>
+		<groupFooter>
+			<band height="20">
+				<printWhenExpression><![CDATA[$F{sal_type}.equals("credit")]]></printWhenExpression>
+				<textField>
+					<reportElement x="0" y="0" width="158" height="20"/>
+					<box leftPadding="2">
+						<topPen lineWidth="0.0"/>
+						<leftPen lineWidth="0.0"/>
+						<bottomPen lineWidth="0.0"/>
+						<rightPen lineWidth="0.0"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Total"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="158" y="0" width="80" height="20"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{credit_subtot_1}]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupFooter>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="103">
+			<textField>
+				<reportElement x="0" y="0" width="555" height="20"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{company_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="20" width="555" height="20"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{street1}+$F{street2}+$F{city}+"-"+$F{zip}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="40" width="555" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Sales Register"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="60" width="181" height="20"/>
+				<box leftPadding="2"/>
+				<textElement/>
+				<textFieldExpression><![CDATA["From Date: "+$P{p_from_date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="410" y="60" width="145" height="20"/>
+				<box leftPadding="0" rightPadding="2"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["To Date: "+$P{p_to_date}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="20">
+			<printWhenExpression><![CDATA[$F{sal_type}.equals("cash")]]></printWhenExpression>
+			<textField>
+				<reportElement x="0" y="0" width="76" height="20"/>
+				<box>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{date_order}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="76" y="0" width="82" height="20"/>
+				<box>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{cash_count}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="158" y="0" width="80" height="20"/>
+				<box>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{cash_subtot}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="20">
+			<printWhenExpression><![CDATA[$F{sal_type}.equals("credit")]]></printWhenExpression>
+			<textField>
+				<reportElement x="76" y="0" width="82" height="20"/>
+				<box>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{credit_count}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="158" y="0" width="80" height="20"/>
+				<box>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{credit_subtot}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="0" width="76" height="20"/>
+				<box>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{date_order}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="50">
+			<textField>
+				<reportElement x="0" y="30" width="214" height="20"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{user_name}+" "+"/"+" "+$F{new_date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="214" y="30" width="80" height="20"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="294" y="30" width="261" height="20"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<noData>
+		<band height="50">
+			<textField>
+				<reportElement x="134" y="0" width="276" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA["No Data found"]]></textFieldExpression>
+			</textField>
+		</band>
+	</noData>
+</jasperReport>

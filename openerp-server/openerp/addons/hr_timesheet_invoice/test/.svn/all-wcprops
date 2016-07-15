@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/hr_timesheet_invoice/test
+END
+test_hr_timesheet_invoice.yml
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/hr_timesheet_invoice/test/test_hr_timesheet_invoice.yml
+END
+hr_timesheet_invoice_report.yml
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/hr_timesheet_invoice/test/hr_timesheet_invoice_report.yml
+END
+test_hr_timesheet_invoice_no_prod_tax.yml
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/hr_timesheet_invoice/test/test_hr_timesheet_invoice_no_prod_tax.yml
+END

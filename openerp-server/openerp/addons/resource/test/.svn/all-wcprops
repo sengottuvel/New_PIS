@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/resource/test
+END
+resource.yml
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/resource/test/resource.yml
+END
+duplicate_resource.yml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/resource/test/duplicate_resource.yml
+END

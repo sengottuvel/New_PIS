@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="vendorwise_bill_abstract" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" whenNoDataType="NoDataSection" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="from_date" class="java.lang.String"/>
+	<parameter name="to_date" class="java.lang.String"/>
+	<parameter name="f_date" class="java.lang.String"/>
+	<parameter name="t_date" class="java.lang.String"/>
+	<parameter name="user_name" class="java.lang.String"/>
+	<parameter name="location_id" class="java.lang.Integer">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="header_name" class="java.lang.String"/>
+	<parameter name="p_to_date" class="java.lang.String"/>
+	<parameter name="supplier_id" class="java.lang.Integer"/>
+	<parameter name="user_id" class="java.lang.Integer">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[select a.supplier as supplier,
+(case when to_char(a.po_value,'99G99G990D99') is null then '0.00' else to_char(a.po_value,'99G99G990D99') end) as po_value,
+(case when to_char(a.grn_value,'99G99G990D99') is null then '0.00' else to_char(a.grn_value,'99G99G990D99') end) as grn_value,
+(case when to_char(a.advance_value,'99G99G990D99') is null then '0.00' else to_char(a.advance_value,'99G99G990D99') end) as advance_value,
+(case when to_char(a.inv_amt,'99G99G990D99') is null then '0.00' else to_char(a.inv_amt,'99G99G990D99') end) as inv_amt,
+(case when to_char(a.against_inv,'99G99G990D99') is null then '0.00' else to_char(a.against_inv,'99G99G990D99') end) as against_inv,
+(case when to_char(a.bal_amt,'99G99G990D99') is null then '0.00' else to_char(a.bal_amt,'99G99G990D99') end) as bal_amt,
+part.street as street1,
+part.street2 as street2,
+comp_city.name as city,
+part.zip as zip,
+part.phone as phone,
+part.fax as fax,
+part.email as email,
+to_char(CURRENT_TIMESTAMP, 'DD-MM-YYYY HH12:MI:SS AM') AS New_Date,
+res_company.name as company_name
+
+from
+
+(select res.name as supplier,
+po.company_id,
+po.partner_id,
+round(sum(po.amount_total),2) as po_value,
+
+round(((select sum(amount_total) from kg_po_grn where supplier_id = po.partner_id)
++
+(select sum(amount_total) from kg_general_grn where supplier_id = po.partner_id)),2)
+ as grn_value,
+(select round(sum(advance_amt)::integer,2) from kg_po_advance where supplier_id = po.partner_id) as advance_value,
+(select round(sum(net_amt)::integer,2) from kg_purchase_invoice where supplier_id = po.partner_id) as inv_amt,
+
+round((sum(inv.net_amt) - sum(inv.bal_amt) )::integer,2) as against_inv,
+round(sum(inv.bal_amt)::integer,2) as bal_amt
+ from purchase_order po
+left join res_partner res on (res.id = po.partner_id)
+
+left join kg_purchase_invoice inv on (inv.supplier_id = po.partner_id)
+where res.supplier='t' and po.state ='approved' and to_char(po.approved_date::date,'yyyy-mm-dd') <= $P{t_date}
+and (case when $P{supplier_id} is null then po.partner_id in (select distinct partner_id from purchase_order) else po.partner_id in (select supplier_id from kg_vendor_detail_sup where wiz_id = (select max(wiz_id) from kg_vendor_detail_sup)) end)
+group by res.name,po.partner_id,po.company_id
+order by res.name) as a
+left join res_company on (res_company.id = a.company_id)
+left join res_partner part on (part.id = res_company.partner_id)
+left join res_city comp_city on (comp_city.id =res_company.city)
+left join res_users users on (users.id = $P{user_id})
+left join res_partner user_part on (user_part.id = users.partner_id)]]>
+	</queryString>
+	<field name="supplier" class="java.lang.String"/>
+	<field name="po_value" class="java.lang.String"/>
+	<field name="grn_value" class="java.lang.String"/>
+	<field name="advance_value" class="java.lang.String"/>
+	<field name="inv_amt" class="java.lang.String"/>
+	<field name="against_inv" class="java.lang.String"/>
+	<field name="bal_amt" class="java.lang.String"/>
+	<field name="street1" class="java.lang.String"/>
+	<field name="street2" class="java.lang.String"/>
+	<field name="city" class="java.lang.String"/>
+	<field name="zip" class="java.lang.String"/>
+	<field name="phone" class="java.lang.String"/>
+	<field name="fax" class="java.lang.String"/>
+	<field name="email" class="java.lang.String"/>
+	<field name="new_date" class="java.lang.String"/>
+	<field name="company_name" class="java.lang.String"/>
+	<group name="Vendor">
+		<groupExpression><![CDATA[$F{supplier}]]></groupExpression>
+		<groupHeader>
+			<band height="20">
+				<textField isBlankWhenNull="false">
+					<reportElement x="280" y="0" width="97" height="20"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[$F{po_value}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="66" y="0" width="214" height="20"/>
+					<textElement verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[$F{supplier}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="0" y="0" width="66" height="20"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[$V{REPORT_COUNT} + 1]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="377" y="0" width="97" height="20"/>
+					<box rightPadding="2"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[$F{grn_value}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="474" y="0" width="76" height="20"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[$F{advance_value}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="550" y="0" width="79" height="20"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[$F{inv_amt}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="629" y="0" width="87" height="20"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[$F{against_inv}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="716" y="0" width="86" height="20"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[$F{bal_amt}]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupHeader>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="40" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="802" height="20"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{company_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="20" width="802" height="20"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{street1}+$F{street2}+$F{city}+"-"+$F{zip}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="59" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="802" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Vendor Profile Report"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="594" y="20" width="208" height="20"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA["As on Date :"+$P{p_to_date}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="66" height="20"/>
+				<box>
+					<topPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA["S.NO"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="66" y="0" width="214" height="20"/>
+				<box>
+					<topPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA["Vendor"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="280" y="0" width="97" height="20"/>
+				<box>
+					<topPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA["Order Value"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="377" y="0" width="97" height="20"/>
+				<box>
+					<topPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA["Goods Received Value"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="474" y="0" width="76" height="20"/>
+				<box>
+					<topPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA["Advance Paid"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="550" y="0" width="79" height="20"/>
+				<box>
+					<topPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA["Invoice Value"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="629" y="0" width="87" height="20"/>
+				<box>
+					<topPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA["Paid against Invoice"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="716" y="0" width="86" height="20"/>
+				<box>
+					<topPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA["Balance Payable"]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<pageFooter>
+		<band height="20">
+			<textField>
+				<reportElement x="0" y="0" width="324" height="20"/>
+				<box>
+					<topPen lineWidth="0.5"/>
+				</box>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{user_name}+" "+"/"+" "+$F{new_date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="324" y="0" width="80" height="20"/>
+				<box>
+					<topPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="404" y="0" width="398" height="20"/>
+				<box>
+					<topPen lineWidth="0.5"/>
+				</box>
+				<textElement/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<noData>
+		<band height="50">
+			<textField>
+				<reportElement x="346" y="0" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA["No data found"]]></textFieldExpression>
+			</textField>
+		</band>
+	</noData>
+</jasperReport>

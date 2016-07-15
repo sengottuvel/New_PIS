@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/delivery
+END
+stock.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/delivery/stock.py
+END
+delivery.py
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/delivery/delivery.py
+END
+__openerp__.py
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/delivery/__openerp__.py
+END
+sale.py
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/delivery/sale.py
+END
+delivery_data.xml
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/delivery/delivery_data.xml
+END
+delivery_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/delivery/delivery_view.xml
+END
+delivery_report.xml
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/delivery/delivery_report.xml
+END
+partner.py
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/delivery/partner.py
+END
+partner_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/delivery/partner_view.xml
+END
+delivery_demo.xml
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/delivery/delivery_demo.xml
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/delivery/__init__.py
+END

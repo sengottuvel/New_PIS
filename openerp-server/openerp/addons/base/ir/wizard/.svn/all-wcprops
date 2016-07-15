@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/base/ir/wizard
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/base/ir/wizard/__init__.py
+END
+__init__.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/base/ir/wizard/__init__.pyc
+END
+wizard_menu.py
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/base/ir/wizard/wizard_menu.py
+END
+wizard_menu_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/base/ir/wizard/wizard_menu_view.xml
+END
+wizard_menu.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/base/ir/wizard/wizard_menu.pyc
+END

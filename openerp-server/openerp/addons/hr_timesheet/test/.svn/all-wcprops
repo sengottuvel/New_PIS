@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/hr_timesheet/test
+END
+hr_timesheet_report.yml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/hr_timesheet/test/hr_timesheet_report.yml
+END
+test_hr_timesheet.yml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/hr_timesheet/test/test_hr_timesheet.yml
+END
+hr_timesheet_demo.yml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/hr_timesheet/test/hr_timesheet_demo.yml
+END

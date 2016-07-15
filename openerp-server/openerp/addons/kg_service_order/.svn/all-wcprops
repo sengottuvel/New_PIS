@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/KGTrust_ERP/!svn/ver/728/openerp-server/openerp/addons/kg_service_order
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/kg_service_order/__init__.py
+END
+kg_service_order.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/KGTrust_ERP/!svn/ver/618/openerp-server/openerp/addons/kg_service_order/kg_service_order.pyc
+END
+kglogo.gif
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/kg_service_order/kglogo.gif
+END
+__init__.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/KGTrust_ERP/!svn/ver/618/openerp-server/openerp/addons/kg_service_order/__init__.pyc
+END
+__openerp__.py
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/kg_service_order/__openerp__.py
+END
+service_order_report_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/kg_service_order/service_order_report_view.xml
+END
+kg_service_order.py
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/KGTrust_ERP/!svn/ver/728/openerp-server/openerp/addons/kg_service_order/kg_service_order.py
+END
+kg_service_order_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/KGTrust_ERP/!svn/ver/684/openerp-server/openerp/addons/kg_service_order/kg_service_order_view.xml
+END

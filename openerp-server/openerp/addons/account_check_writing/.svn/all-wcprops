@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/account_check_writing
+END
+account_voucher.py
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/account_check_writing/account_voucher.py
+END
+account_demo.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/account_check_writing/account_demo.xml
+END
+account_voucher_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/account_check_writing/account_voucher_view.xml
+END
+account_voucher.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/account_check_writing/account_voucher.pyc
+END
+account.py
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/account_check_writing/account.py
+END
+account_check_writing_data.xml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/account_check_writing/account_check_writing_data.xml
+END
+account_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/account_check_writing/account_view.xml
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/account_check_writing/__init__.py
+END
+account.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/account_check_writing/account.pyc
+END
+account_check_writing_report.xml
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/account_check_writing/account_check_writing_report.xml
+END
+__init__.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/account_check_writing/__init__.pyc
+END
+__openerp__.py
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/account_check_writing/__openerp__.py
+END

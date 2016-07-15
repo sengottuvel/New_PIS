@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/KGTrust_ERP/!svn/ver/253/openerp-server/openerp/addons/kg_mail_settings
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/kg_mail_settings/__init__.py
+END
+__init__.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/kg_mail_settings/__init__.pyc
+END
+kg_mail_settings.py
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/KGTrust_ERP/!svn/ver/253/openerp-server/openerp/addons/kg_mail_settings/kg_mail_settings.py
+END
+__openerp__.py
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/kg_mail_settings/__openerp__.py
+END
+kg_mail_settings_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/KGTrust_ERP/!svn/ver/253/openerp-server/openerp/addons/kg_mail_settings/kg_mail_settings_view.xml
+END
+kg_mail_settings.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/kg_mail_settings/kg_mail_settings.pyc
+END

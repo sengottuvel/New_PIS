@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/l10n_fr_rib
+END
+bank_data.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/l10n_fr_rib/bank_data.xml
+END
+bank_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/l10n_fr_rib/bank_view.xml
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/l10n_fr_rib/__init__.py
+END
+__openerp__.py
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/l10n_fr_rib/__openerp__.py
+END
+bank.py
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/l10n_fr_rib/bank.py
+END

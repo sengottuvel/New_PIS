@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/marketing/security
+END
+ir.model.access.csv
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/marketing/security/ir.model.access.csv
+END
+marketing_security.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/marketing/security/marketing_security.xml
+END

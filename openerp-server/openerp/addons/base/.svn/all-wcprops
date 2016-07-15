@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/KGTrust_ERP/!svn/ver/832/openerp-server/openerp/addons/base
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/base/__init__.py
+END
+base.sql
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/base/base.sql
+END
+__init__.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/base/__init__.pyc
+END
+__openerp__.py
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/base/__openerp__.py
+END
+base_menu.xml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/base/base_menu.xml
+END
+base_demo.xml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/base/base_demo.xml
+END
+currency_data.xml
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/base/currency_data.xml
+END
+base_data.xml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/base/base_data.xml
+END

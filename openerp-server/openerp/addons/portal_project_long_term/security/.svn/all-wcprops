@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/portal_project_long_term/security
+END
+ir.model.access.csv
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/portal_project_long_term/security/ir.model.access.csv
+END
+portal_security.xml
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/portal_project_long_term/security/portal_security.xml
+END

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<openerp>
+    <data>
+        
+        <record id="closing_stock_ledger_wiz_form" model="ir.ui.view">
+            <field name="name">Closing Stock ledger</field>
+            <field name="model">kg.stock.ledger.wizard</field>
+            <field name="type">form</field>            
+            <field name="arch" type="xml">
+				<form string="Closing Stock ledger">
+					<group>
+						<group>
+						<field name="fis_year" invisible="1"/>
+						<field name="location_id"/>
+						<field name="report_type" on_change="onchange_product(report_type)"/>
+						<field name="product_id" attrs="{'required': [('report_type','!=','all_product')],'invisible': [('report_type','=','all_product')]}"/>
+						</group>
+						<group>
+						<field name="categ_id" invisible="1"/>	
+						<field name="type" invisible="1"/>	
+						<field name="report_group" invisible="1"/>	
+						<field name="from_date" required="1" invisible="1"/>	
+						<field name="to_date" required="1"/>
+						
+
+						</group>
+					</group>				
+					<newline></newline>
+					<group>                         
+						<button type="object" name="create_report" icon="gtk-go-forward" string="Generate"/>
+					</group>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_closing_stock_ledger_wiz" model="ir.actions.act_window">
+            <field name="name">Closing Stock ledger</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">kg.stock.ledger.wizard</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>        
+
+        <report string="closing Stock Ledger Report"
+		model="kg.stock.ledger.wizard"
+		auto="True"
+		name="jasper_kg_stock_ledger_report"
+		rml="kg_store_reports/report/kg_stock_ledger_report.jrxml"
+		id="closing_stock_ledger_report_id"
+		menu="False"
+		/>               
+        
+		 
+        
+      <menuitem
+				 name="Closing Stock Ledger Report" 
+				 action="action_closing_stock_ledger_wiz"
+				 id="menu_action_closing_stock_ledger_wizd"
+				 parent="kg_menus.main_store_report_menu" sequence="11"/>
+
+    </data>
+</openerp>

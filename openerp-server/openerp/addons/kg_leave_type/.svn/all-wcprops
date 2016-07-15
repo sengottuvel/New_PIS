@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/kg_leave_type
+END
+__openerp__.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/kg_leave_type/__openerp__.py
+END
+kg_leave_type.py
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/kg_leave_type/kg_leave_type.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/kg_leave_type/__init__.py
+END
+kg_leave_type_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/kg_leave_type/kg_leave_type_view.xml
+END
+kg_leave_type.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/kg_leave_type/kg_leave_type.pyc
+END
+__init__.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/kg_leave_type/__init__.pyc
+END

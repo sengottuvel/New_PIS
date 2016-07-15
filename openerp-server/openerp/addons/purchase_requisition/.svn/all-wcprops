@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/KGTrust_ERP/!svn/ver/92/openerp-server/openerp/addons/purchase_requisition
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/purchase_requisition/__init__.py
+END
+purchase_requisition_demo.xml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/purchase_requisition/purchase_requisition_demo.xml
+END
+__init__.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/purchase_requisition/__init__.pyc
+END
+__openerp__.py
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/purchase_requisition/__openerp__.py
+END
+purchase_requisition_sequence.xml
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/purchase_requisition/purchase_requisition_sequence.xml
+END
+purchase_requisition.py
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/KGTrust_ERP/!svn/ver/92/openerp-server/openerp/addons/purchase_requisition/purchase_requisition.py
+END
+purchase_requisition_data.xml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/purchase_requisition/purchase_requisition_data.xml
+END
+purchase_requisition_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/purchase_requisition/purchase_requisition_view.xml
+END
+purchase_requisition_report.xml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/purchase_requisition/purchase_requisition_report.xml
+END
+purchase_requisition.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/purchase_requisition/purchase_requisition.pyc
+END

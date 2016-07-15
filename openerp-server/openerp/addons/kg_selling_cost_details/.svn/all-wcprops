@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/KGTrust_ERP/!svn/ver/669/openerp-server/openerp/addons/kg_selling_cost_details
+END
+kg_selling_cost_details.py
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/KGTrust_ERP/!svn/ver/669/openerp-server/openerp/addons/kg_selling_cost_details/kg_selling_cost_details.py
+END
+kg_selling_cost_details_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/KGTrust_ERP/!svn/ver/647/openerp-server/openerp/addons/kg_selling_cost_details/kg_selling_cost_details_view.xml
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/KGTrust_ERP/!svn/ver/372/openerp-server/openerp/addons/kg_selling_cost_details/__init__.py
+END
+Selling_cost_report_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/KGTrust_ERP/!svn/ver/372/openerp-server/openerp/addons/kg_selling_cost_details/Selling_cost_report_view.xml
+END
+__openerp__.py
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/KGTrust_ERP/!svn/ver/372/openerp-server/openerp/addons/kg_selling_cost_details/__openerp__.py
+END

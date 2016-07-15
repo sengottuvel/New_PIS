@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/lunch/report
+END
+order.sxw
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/lunch/report/order.sxw
+END
+order.py
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/lunch/report/order.py
+END
+order.rml
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/lunch/report/order.rml
+END
+order.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/lunch/report/order.pyc
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/lunch/report/__init__.py
+END
+report_lunch_order.py
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/lunch/report/report_lunch_order.py
+END
+report_lunch_order_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/lunch/report/report_lunch_order_view.xml
+END
+__init__.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/lunch/report/__init__.pyc
+END
+report_lunch_order.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/lunch/report/report_lunch_order.pyc
+END

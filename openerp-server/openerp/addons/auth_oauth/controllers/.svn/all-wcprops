@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/auth_oauth/controllers
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/auth_oauth/controllers/__init__.py
+END
+main.py
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/auth_oauth/controllers/main.py
+END

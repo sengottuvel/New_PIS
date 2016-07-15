@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/plugin_outlook/static/openerp-outlook-plugin/OpenERPClient
+END
+OpenERPClient.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/plugin_outlook/static/openerp-outlook-plugin/OpenERPClient/OpenERPClient.csproj
+END
+OpenERPConnect.cs
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/plugin_outlook/static/openerp-outlook-plugin/OpenERPClient/OpenERPConnect.cs
+END
+XMLRPCClient.cs
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/plugin_outlook/static/openerp-outlook-plugin/OpenERPClient/XMLRPCClient.cs
+END
+Record.cs
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/plugin_outlook/static/openerp-outlook-plugin/OpenERPClient/Record.cs
+END
+Model.cs
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/plugin_outlook/static/openerp-outlook-plugin/OpenERPClient/Model.cs
+END

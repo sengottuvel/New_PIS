@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/l10n_et/data
+END
+account.account.template.csv
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/l10n_et/data/account.account.template.csv
+END
+account.tax.template.csv
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/l10n_et/data/account.tax.template.csv
+END
+account.chart.template.csv
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/l10n_et/data/account.chart.template.csv
+END
+account.account.type.csv
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/l10n_et/data/account.account.type.csv
+END
+account.tax.code.template.csv
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/l10n_et/data/account.tax.code.template.csv
+END
+res.country.state.csv
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/l10n_et/data/res.country.state.csv
+END

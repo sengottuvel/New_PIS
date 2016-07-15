@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/hr_holidays/report
+END
+hr_custom_rml.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/hr_holidays/report/hr_custom_rml.xsl
+END
+available_holidays.py
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/hr_holidays/report/available_holidays.py
+END
+available_holidays_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/hr_holidays/report/available_holidays_view.xml
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/hr_holidays/report/__init__.py
+END
+hr_holidays_report.py
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/hr_holidays/report/hr_holidays_report.py
+END
+hr_holidays_report_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/hr_holidays/report/hr_holidays_report_view.xml
+END
+holidays_summary_report.py
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/hr_holidays/report/holidays_summary_report.py
+END
+hr_custom_default.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/hr_holidays/report/hr_custom_default.xsl
+END
+holidays_summary.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/hr_holidays/report/holidays_summary.xsl
+END

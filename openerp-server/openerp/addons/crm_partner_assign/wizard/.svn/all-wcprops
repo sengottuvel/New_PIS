@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/crm_partner_assign/wizard
+END
+crm_forward_to_partner.py
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/crm_partner_assign/wizard/crm_forward_to_partner.py
+END
+crm_forward_to_partner_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/crm_partner_assign/wizard/crm_forward_to_partner_view.xml
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/crm_partner_assign/wizard/__init__.py
+END

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+		
+	<!-- Other menu Changes -->
+				
+	<menuitem id="menu_others" name= "Others" sequence="12" groups="hrm_group_others"/>
+	<menuitem id="hr_attendance.menu_hr_time_tracking" name="Time Tracking" parent="menu_others" sequence="3" 
+					groups="base.group_user,base.group_hr_user,base.group_hr_manager"/>
+					
+	 <menuitem name="Leaves" parent="menu_others" id="hr_holidays.menu_open_ask_holidays" sequence="5"/>
+	 
+	 <menuitem action="hr_attendance.open_view_attendance" id="hr_attendance.menu_open_view_attendance" 
+					parent="menu_others" sequence="7" groups="base.group_hr_attendance"/>
+					
+
+        
+	 <menuitem id="hr_payroll.menu_action_hr_salary_rule_form" action="hr_payroll.action_salary_rule_form" 
+				parent="hr.menu_hr_main" name="Earning / Deduction Type" sequence="9"/>
+				
+	<menuitem action="hr.open_module_tree_department" id="hr.menu_hr_department_tree" 
+				parent="hr.menu_hr_main" sequence="8"/>
+				
+	<menuitem id="hr.menu_hr_configuration" name="Configuration" parent="menu_others" 
+				groups="base.group_hr_manager" sequence="70"/>
+
+
+	<menuitem action="base.action_res_bank_form" id="base.menu_action_res_bank_form" 
+				parent="kg_shift_time.kg_master_menu" sequence="3" name="Bank Master"/>
+
+	<menuitem parent="kg_shift_time.kg_master_menu" id="menu_hr_job" action="hr.action_hr_job" sequence="5"/>
+
+				
+
+
+
+
+
+    
+    </data>
+</openerp>

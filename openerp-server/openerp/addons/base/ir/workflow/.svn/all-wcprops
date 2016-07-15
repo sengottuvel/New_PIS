@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/base/ir/workflow
+END
+workflow.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/base/ir/workflow/workflow.py
+END
+workflow_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/base/ir/workflow/workflow_view.xml
+END
+workflow.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/base/ir/workflow/workflow.pyc
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/base/ir/workflow/__init__.py
+END
+print_instance.py
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/base/ir/workflow/print_instance.py
+END
+__init__.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/base/ir/workflow/__init__.pyc
+END
+print_instance.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/base/ir/workflow/print_instance.pyc
+END

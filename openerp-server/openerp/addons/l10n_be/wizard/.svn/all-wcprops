@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/l10n_be/wizard
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/l10n_be/wizard/__init__.py
+END
+l10n_be_partner_vat_listing.rml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/l10n_be/wizard/l10n_be_partner_vat_listing.rml
+END
+l10n_be_partner_vat_listing.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/l10n_be/wizard/l10n_be_partner_vat_listing.pyc
+END
+__init__.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/l10n_be/wizard/__init__.pyc
+END
+l10n_be_vat_intra_print.rml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/l10n_be/wizard/l10n_be_vat_intra_print.rml
+END
+l10n_be_partner_vat_listing.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/l10n_be/wizard/l10n_be_partner_vat_listing.xml
+END
+l10n_be_vat_intra.py
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/l10n_be/wizard/l10n_be_vat_intra.py
+END
+l10n_be_vat_intra_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/l10n_be/wizard/l10n_be_vat_intra_view.xml
+END
+l10n_be_vat_intra.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/l10n_be/wizard/l10n_be_vat_intra.pyc
+END
+l10n_be_account_vat_declaration.py
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/l10n_be/wizard/l10n_be_account_vat_declaration.py
+END
+l10n_be_account_vat_declaration_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/l10n_be/wizard/l10n_be_account_vat_declaration_view.xml
+END
+l10n_be_account_vat_declaration.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/l10n_be/wizard/l10n_be_account_vat_declaration.pyc
+END
+l10n_be_partner_vat_listing.py
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/l10n_be/wizard/l10n_be_partner_vat_listing.py
+END

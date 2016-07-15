@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+	
+	<!-- CRM Form View -->
+<record id="kg_grn_form_view" model="ir.ui.view">
+		<field name="name">KG GRN QA</field>
+		<field name="model">kg.grn.qa</field>
+		<field name="arch" type="xml">
+		<form string="GRN QA Form" version="7.0" create="false">
+			<header>
+			    <button name="confirm" string="Confirm" states="draft" type="object" class="oe_highlight"/>
+			    <button name="approve" string="Approve" states="confirm" type="object" class="oe_highlight"/>
+			    <button name="approve_GP" string="Approve &amp; Generate GP" states="confirm" type="object" class="oe_highlight"/>
+			</header>
+				<group>
+					<group>
+						<field name = "user_id"/>
+						<field name = "name" required="0"/>
+					
+						<field name = "gen_grn_no" attrs="{'invisible': [('grn_type','=','from_po_grn')]}"/>
+						<field name = "po_grn_no" attrs="{'invisible': [('grn_type','=','from_general_grn')]}"/>
+						<field name = "conf_user_id" />
+						<field name = "app_user_id" />
+						<field name = "active" />
+						<field name = "grn_type" />
+						
+						
+						
+						
+						
+					</group>											
+					<group>
+						<field name = "date" />
+						<field name = "qa_date" />
+						<field name = "partner_id" />
+						<field name = "confirm_date" />
+						<field name = "approve_date" />
+						<field name = "state" />
+						
+						
+						
+						
+						
+					</group>					
+				</group>	
+				    
+					<field colspan="4" mode="tree" name="line_ids" nolabel="1" widget="one2many_list" >
+						<tree string="GRN qa Line" editable="bottom"> 
+							<field name="product_id" required="1" readonly="1"/>
+							<field name="uom_id" required="1" readonly="1"/>
+							<field name="quantity" sum="total_sum" required="1"  readonly="1"/>
+							<field name="accepted_qty" on_change="onchange_reject_qty(quantity,accepted_qty,rejected_qty)" />
+							<field name="rejected_qty"/>
+							
+							<field name="remarks" attrs="{'required': [('rejected_qty','&gt;',0)]}"/>
+							
+												
+						</tree>		
+						
+									
+						<form string="GRN Line" >
+							<group>
+								<group>
+									<field name="accepted_qty" />
+									<field name="rejected_qty"/>
+									<field name="remarks"/>
+
+									
+								</group>
+								<group>
+									
+							        <field name="quantity" sum="total_sum"/>
+							        <field name="gen_grn_line_id" invisible="1"/>
+							        <field name="po_grn_line_id" invisible="1"/>
+							        
+							        
+							        
+									
+									
+								</group>
+							</group>					
+						</form>
+					</field> 
+				    <field name="remark" class="oe_inline" placeholder="Remarks..."/>	
+		</form>
+	</field> 
+
+</record>
+
+		<!-- CRM Tree View -->
+		
+		<record id="kg_grn_qa_tree_view" model="ir.ui.view">
+			<field name="name">kg.grn.qa.line</field>
+			<field name="model">kg.grn.qa</field>
+			<field eval="8" name="priority"/>
+			<field name="arch" type="xml">
+				<tree string="final List" toolbar="1" colors="blue:state == 'draft';red:state == 'confirmed'" create="false">				
+			        <field name="name" />
+			        <field name="date"/>
+			        <field name="state"/>
+			       
+			        						
+					
+					
+					
+					<!-- <button icon="go-next" name="make_order" states="confirm" string="Make Order" type="object" class="oe_highlight"/> -->
+					
+				</tree>
+			</field>
+		</record>
+		
+			<!-- CRM Group By and Filter View -->
+		
+		
+        
+        <!-- Menu Action -->			
+		
+		 <record id="grn_qa_action_form" model="ir.actions.act_window">
+			<field name="name">GRN QA</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">kg.grn.qa</field>
+			<field name="view_type">form</field>
+			<field name="view_id" ref="kg_grn_qa_tree_view"/>
+		</record>
+		
+		
+		
+		<!-- Menu Items -->
+		
+
+	
+	<menuitem id="menu_grn_qa_action_form" parent="stock.menu_stock_warehouse_mgmt" sequence="3" action="grn_qa_action_form" />
+	
+	
+
+
+        
+</data>
+	</openerp>

@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/base/report
+END
+mako_footer.html
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/base/report/mako_footer.html
+END
+mako_template.css
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/base/report/mako_template.css
+END
+corporate_odt_header.xml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/base/report/corporate_odt_header.xml
+END
+custom.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/base/report/custom.xsl
+END
+custom_default.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/base/report/custom_default.xsl
+END
+corporate_defaults.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/base/report/corporate_defaults.xml
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/base/report/__init__.py
+END
+custom_new.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/base/report/custom_new.xsl
+END
+custom_rml.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/base/report/custom_rml.xsl
+END
+rml_template.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/base/report/rml_template.xsl
+END
+corporate_defaults.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/base/report/corporate_defaults.xsl
+END
+custom_default_printscreen.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/base/report/custom_default_printscreen.xsl
+END
+mako_header.html
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/base/report/mako_header.html
+END
+preview_report.py
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/base/report/preview_report.py
+END
+custom_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/base/report/custom_view.xml
+END
+custom_report.xml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/base/report/custom_report.xml
+END
+preview_report.rml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/base/report/preview_report.rml
+END
+custom_rml_printscreen.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/base/report/custom_rml_printscreen.xsl
+END
+corporate_sxw_header.xml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/base/report/corporate_sxw_header.xml
+END

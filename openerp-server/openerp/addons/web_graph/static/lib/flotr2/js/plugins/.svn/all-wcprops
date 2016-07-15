@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/web_graph/static/lib/flotr2/js/plugins
+END
+handles.js
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/web_graph/static/lib/flotr2/js/plugins/handles.js
+END
+legend.js
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/web_graph/static/lib/flotr2/js/plugins/legend.js
+END
+labels.js
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/web_graph/static/lib/flotr2/js/plugins/labels.js
+END
+hit.js
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/web_graph/static/lib/flotr2/js/plugins/hit.js
+END
+titles.js
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/web_graph/static/lib/flotr2/js/plugins/titles.js
+END
+grid.js
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/web_graph/static/lib/flotr2/js/plugins/grid.js
+END
+selection.js
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/web_graph/static/lib/flotr2/js/plugins/selection.js
+END
+download.js
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/web_graph/static/lib/flotr2/js/plugins/download.js
+END
+spreadsheet.js
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/web_graph/static/lib/flotr2/js/plugins/spreadsheet.js
+END
+crosshair.js
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/web_graph/static/lib/flotr2/js/plugins/crosshair.js
+END

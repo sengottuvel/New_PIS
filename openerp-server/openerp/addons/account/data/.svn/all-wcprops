@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/account/data
+END
+account_data.xml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/account/data/account_data.xml
+END
+data_account_type.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/account/data/data_account_type.xml
+END
+configurable_account_chart.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/account/data/configurable_account_chart.xml
+END

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/hr_timesheet_invoice/wizard
+END
+hr_timesheet_analytic_profit.py
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/hr_timesheet_invoice/wizard/hr_timesheet_analytic_profit.py
+END
+hr_timesheet_final_invoice_create.py
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/hr_timesheet_invoice/wizard/hr_timesheet_final_invoice_create.py
+END
+hr_timesheet_analytic_profit_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/hr_timesheet_invoice/wizard/hr_timesheet_analytic_profit_view.xml
+END
+hr_timesheet_invoice_create_final_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/hr_timesheet_invoice/wizard/hr_timesheet_invoice_create_final_view.xml
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/hr_timesheet_invoice/wizard/__init__.py
+END
+hr_timesheet_invoice_create.py
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/hr_timesheet_invoice/wizard/hr_timesheet_invoice_create.py
+END
+hr_timesheet_invoice_create_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/hr_timesheet_invoice/wizard/hr_timesheet_invoice_create_view.xml
+END

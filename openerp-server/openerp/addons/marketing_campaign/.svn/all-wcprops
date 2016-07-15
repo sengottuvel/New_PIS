@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/marketing_campaign
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/marketing_campaign/__init__.py
+END
+marketing_campaign.py
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/marketing_campaign/marketing_campaign.py
+END
+marketing_campaign_data.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/marketing_campaign/marketing_campaign_data.xml
+END
+marketing_campaign_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/marketing_campaign/marketing_campaign_view.xml
+END
+marketing_campaign_workflow.xml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/marketing_campaign/marketing_campaign_workflow.xml
+END
+__openerp__.py
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/marketing_campaign/__openerp__.py
+END
+res_partner.py
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/marketing_campaign/res_partner.py
+END
+res_partner_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/marketing_campaign/res_partner_view.xml
+END
+marketing_campaign_demo.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/marketing_campaign/marketing_campaign_demo.xml
+END

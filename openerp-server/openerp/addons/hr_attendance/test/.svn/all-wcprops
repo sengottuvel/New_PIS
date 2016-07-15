@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/hr_attendance/test
+END
+attendance_process.yml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/hr_attendance/test/attendance_process.yml
+END
+hr_attendance_report.yml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/hr_attendance/test/hr_attendance_report.yml
+END

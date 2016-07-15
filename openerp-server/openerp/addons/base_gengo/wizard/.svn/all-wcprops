@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/base_gengo/wizard
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/base_gengo/wizard/__init__.py
+END
+base_gengo_translations.py
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/base_gengo/wizard/base_gengo_translations.py
+END
+base_gengo_translations_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/base_gengo/wizard/base_gengo_translations_view.xml
+END

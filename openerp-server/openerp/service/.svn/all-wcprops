@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/service
+END
+websrv_lib.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/service/websrv_lib.py
+END
+wsgi_server.py
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/service/wsgi_server.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/service/__init__.py
+END
+cron.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/service/cron.py
+END
+websrv_lib.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/service/websrv_lib.pyc
+END
+wsgi_server.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/service/wsgi_server.pyc
+END
+__init__.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/service/__init__.pyc
+END
+netrpc_socket.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/service/netrpc_socket.py
+END
+cron.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/service/cron.pyc
+END
+http_server.py
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/service/http_server.py
+END
+netrpc_socket.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/service/netrpc_socket.pyc
+END
+security.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/service/security.py
+END
+http_server.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/service/http_server.pyc
+END
+security.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/service/security.pyc
+END
+web_services.py
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/service/web_services.py
+END
+netrpc_server.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/service/netrpc_server.py
+END
+web_services.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/service/web_services.pyc
+END
+netrpc_server.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/service/netrpc_server.pyc
+END
+workers.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/service/workers.py
+END

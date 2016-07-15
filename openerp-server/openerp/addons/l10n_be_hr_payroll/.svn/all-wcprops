@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/l10n_be_hr_payroll
+END
+__init__.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/l10n_be_hr_payroll/__init__.pyc
+END
+__openerp__.py
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/l10n_be_hr_payroll/__openerp__.py
+END
+l10n_be_hr_payroll_demo.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/l10n_be_hr_payroll/l10n_be_hr_payroll_demo.xml
+END
+l10n_be_hr_payroll.py
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/l10n_be_hr_payroll/l10n_be_hr_payroll.py
+END
+l10n_be_hr_payroll_data.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/l10n_be_hr_payroll/l10n_be_hr_payroll_data.xml
+END
+l10n_be_hr_payroll_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/l10n_be_hr_payroll/l10n_be_hr_payroll_view.xml
+END
+l10n_be_hr_payroll.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/l10n_be_hr_payroll/l10n_be_hr_payroll.pyc
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/l10n_be_hr_payroll/__init__.py
+END

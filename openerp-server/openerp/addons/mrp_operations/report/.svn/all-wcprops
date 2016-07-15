@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/mrp_operations/report
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/mrp_operations/report/__init__.py
+END
+mrp_workorder_analysis.py
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/mrp_operations/report/mrp_workorder_analysis.py
+END
+mrp_workorder_analysis_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/mrp_operations/report/mrp_workorder_analysis_view.xml
+END
+mrp_wc_barcode.py
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/mrp_operations/report/mrp_wc_barcode.py
+END
+mrp_code_barcode.py
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/mrp_operations/report/mrp_code_barcode.py
+END
+mrp_wc_barcode.rml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/mrp_operations/report/mrp_wc_barcode.rml
+END
+mrp_code_barcode.rml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/mrp_operations/report/mrp_code_barcode.rml
+END

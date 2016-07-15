@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/KGTrust_ERP/!svn/ver/813/openerp-server/openerp/addons/kg_menus
+END
+kg_menus_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/KGTrust_ERP/!svn/ver/813/openerp-server/openerp/addons/kg_menus/kg_menus_view.xml
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/kg_menus/__init__.py
+END
+__init__.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/kg_menus/__init__.pyc
+END
+__openerp__.py
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/kg_menus/__openerp__.py
+END

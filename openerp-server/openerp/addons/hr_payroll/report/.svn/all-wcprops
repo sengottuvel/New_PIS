@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/hr_payroll/report
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/hr_payroll/report/__init__.py
+END
+report_contribution_register.rml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/hr_payroll/report/report_contribution_register.rml
+END
+report_payslip_details.py
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/hr_payroll/report/report_payslip_details.py
+END
+report_payslip_details.rml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/hr_payroll/report/report_payslip_details.rml
+END
+report_payslip.sxw
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/hr_payroll/report/report_payslip.sxw
+END
+report_contribution_register.sxw
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/hr_payroll/report/report_contribution_register.sxw
+END
+report_payslip_details.sxw
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/hr_payroll/report/report_payslip_details.sxw
+END
+report_payslip.py
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/hr_payroll/report/report_payslip.py
+END
+report_contribution_register.py
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/hr_payroll/report/report_contribution_register.py
+END
+report_payslip.rml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/hr_payroll/report/report_payslip.rml
+END

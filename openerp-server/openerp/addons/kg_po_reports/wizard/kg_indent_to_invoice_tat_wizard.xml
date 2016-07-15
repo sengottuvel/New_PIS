@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<openerp>
+    <data>
+        
+        <record id="indent_to_invoice_wiz_form" model="ir.ui.view">
+            <field name="name">Indent to Invoice TAT</field>
+            <field name="model">kg.indent.to.invoice.tat.wizard</field>
+            <field name="type">form</field>            
+            <field name="arch" type="xml">
+				<form string="Indent to Invoice TAT">
+					<group>
+						<group>
+						<field name="fis_year" invisible="1"/>
+						<field name="from_date"  required="1"/>	
+							</group>
+						<group>
+		
+					
+						
+						<field name="to_date" required="1"/>
+						
+
+						</group>
+					</group>				
+					<newline></newline>
+					<group>                         
+						<button type="object" name="create_report" icon="gtk-go-forward" string="Generate"/>
+					</group>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_indent_to_invoice_tat_wiz" model="ir.actions.act_window">
+            <field name="name">Indent to Invoice TAT</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">kg.indent.to.invoice.tat.wizard</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>        
+
+        <report string="Indent to Invoice TAT  Report"
+		model="kg.indent.to.invoice.tat.wizard"
+		auto="True"
+		name="jasper_kg_indent_to_invoice_tat_report"
+		rml="kg_po_reports/report/indent_to_invoice_tat.jrxml"
+		id="kg_indent_to_invoice_tat_id"
+		menu="False"
+		/>               
+        
+		 
+        
+      <menuitem
+				 name="Indent to Invoice TAT  Report" 
+				 action="action_indent_to_invoice_tat_wiz"
+				 id="menu_action_indent_to_invoice_tat_wizd"
+				 parent="kg_menus.main_po_report_menus" sequence="5"/>
+
+    </data>
+</openerp>

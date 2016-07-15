@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/project_long_term/wizard
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/project_long_term/wizard/__init__.py
+END
+project_compute_phases.py
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/project_long_term/wizard/project_compute_phases.py
+END
+project_compute_phases_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/project_long_term/wizard/project_compute_phases_view.xml
+END
+project_compute_tasks.py
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/project_long_term/wizard/project_compute_tasks.py
+END
+project_compute_tasks_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/project_long_term/wizard/project_compute_tasks_view.xml
+END

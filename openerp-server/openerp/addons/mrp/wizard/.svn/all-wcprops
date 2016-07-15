@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/mrp/wizard
+END
+change_production_qty.py
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/mrp/wizard/change_production_qty.py
+END
+change_production_qty_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/mrp/wizard/change_production_qty_view.xml
+END
+change_production_qty.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/mrp/wizard/change_production_qty.pyc
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/mrp/wizard/__init__.py
+END
+mrp_product_produce.py
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/mrp/wizard/mrp_product_produce.py
+END
+mrp_price.py
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/mrp/wizard/mrp_price.py
+END
+mrp_workcenter_load.py
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/mrp/wizard/mrp_workcenter_load.py
+END
+mrp_product_produce_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/mrp/wizard/mrp_product_produce_view.xml
+END
+__init__.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/mrp/wizard/__init__.pyc
+END
+mrp_price_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/mrp/wizard/mrp_price_view.xml
+END
+mrp_product_produce.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/mrp/wizard/mrp_product_produce.pyc
+END
+mrp_workcenter_load_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/mrp/wizard/mrp_workcenter_load_view.xml
+END
+mrp_price.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/mrp/wizard/mrp_price.pyc
+END
+mrp_workcenter_load.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/mrp/wizard/mrp_workcenter_load.pyc
+END

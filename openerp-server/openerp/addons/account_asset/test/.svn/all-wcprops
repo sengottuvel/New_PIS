@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/account_asset/test
+END
+account_asset.yml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/account_asset/test/account_asset.yml
+END
+account_asset_wizard.yml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/account_asset/test/account_asset_wizard.yml
+END
+account_asset_demo.yml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/account_asset/test/account_asset_demo.yml
+END

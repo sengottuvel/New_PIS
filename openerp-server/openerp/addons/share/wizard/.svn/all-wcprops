@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/share/wizard
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/share/wizard/__init__.py
+END
+share_wizard.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/share/wizard/share_wizard.py
+END
+share_wizard_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/share/wizard/share_wizard_view.xml
+END

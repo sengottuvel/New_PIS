@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/base/test
+END
+test_auth.yml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/base/test/test_auth.yml
+END
+test_ir_rule.yml
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/base/test/test_ir_rule.yml
+END
+test_context.xml
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/base/test/test_context.xml
+END
+test_osv_expression.yml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/base/test/test_osv_expression.yml
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/base/test/__init__.py
+END
+base_test.yml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/base/test/base_test.yml
+END
+bug_lp541545.xml
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/base/test/bug_lp541545.xml
+END

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/l10n_be_coda/wizard
+END
+account_coda_import.py
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/l10n_be_coda/wizard/account_coda_import.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/l10n_be_coda/wizard/__init__.py
+END

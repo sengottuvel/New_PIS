@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/osv
+END
+query.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/osv/query.py
+END
+fields.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/osv/fields.py
+END
+osv.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/osv/osv.py
+END
+query.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/osv/query.pyc
+END
+fields.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/osv/fields.pyc
+END
+osv.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/osv/osv.pyc
+END
+orm.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/osv/orm.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/osv/__init__.py
+END
+expression.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/osv/expression.py
+END
+orm.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/osv/orm.pyc
+END
+__init__.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/osv/__init__.pyc
+END
+expression.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/osv/expression.pyc
+END

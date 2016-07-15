@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/jasper_reports/JasperReports
+END
+AbstractDataGenerator.py
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/jasper_reports/JasperReports/AbstractDataGenerator.py
+END
+JasperServer.py
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/jasper_reports/JasperReports/JasperServer.py
+END
+RecordDataGenerator.py
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/jasper_reports/JasperReports/RecordDataGenerator.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/jasper_reports/JasperReports/__init__.py
+END
+JasperReport.py
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/jasper_reports/JasperReports/JasperReport.py
+END
+BrowseDataGenerator.py
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/jasper_reports/JasperReports/BrowseDataGenerator.py
+END

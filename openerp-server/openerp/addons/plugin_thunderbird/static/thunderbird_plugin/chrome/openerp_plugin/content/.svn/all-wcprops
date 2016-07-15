@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/plugin_thunderbird/static/thunderbird_plugin/chrome/openerp_plugin/content
+END
+selectpartner.xul
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/plugin_thunderbird/static/thunderbird_plugin/chrome/openerp_plugin/content/selectpartner.xul
+END
+push_dialog.xul
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/plugin_thunderbird/static/thunderbird_plugin/chrome/openerp_plugin/content/push_dialog.xul
+END
+push.xul
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/plugin_thunderbird/static/thunderbird_plugin/chrome/openerp_plugin/content/push.xul
+END
+style.css
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/plugin_thunderbird/static/thunderbird_plugin/chrome/openerp_plugin/content/style.css
+END
+overlay.xul
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/plugin_thunderbird/static/thunderbird_plugin/chrome/openerp_plugin/content/overlay.xul
+END
+create.xul
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/plugin_thunderbird/static/thunderbird_plugin/chrome/openerp_plugin/content/create.xul
+END
+config.xul
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/plugin_thunderbird/static/thunderbird_plugin/chrome/openerp_plugin/content/config.xul
+END
+push_new.xul
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/plugin_thunderbird/static/thunderbird_plugin/chrome/openerp_plugin/content/push_new.xul
+END
+config_change.xul
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/plugin_thunderbird/static/thunderbird_plugin/chrome/openerp_plugin/content/config_change.xul
+END

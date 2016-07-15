@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/account_followup/tests
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/account_followup/tests/__init__.py
+END
+test_account_followup.py
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/account_followup/tests/test_account_followup.py
+END

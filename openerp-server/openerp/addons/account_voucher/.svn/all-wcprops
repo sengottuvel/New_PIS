@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/account_voucher
+END
+__openerp__.py
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/account_voucher/__openerp__.py
+END
+account_voucher_wizard.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/account_voucher/account_voucher_wizard.xml
+END
+account_voucher_pay_invoice.xml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/account_voucher/account_voucher_pay_invoice.xml
+END
+voucher_payment_receipt_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/account_voucher/voucher_payment_receipt_view.xml
+END
+account_voucher.py
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/account_voucher/account_voucher.py
+END
+account_voucher_sequence.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/account_voucher/account_voucher_sequence.xml
+END
+account_voucher_data.xml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/account_voucher/account_voucher_data.xml
+END
+account_voucher_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/account_voucher/account_voucher_view.xml
+END
+account_voucher_workflow.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/account_voucher/account_voucher_workflow.xml
+END
+account_voucher.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/account_voucher/account_voucher.pyc
+END
+account_voucher_report.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/account_voucher/account_voucher_report.xml
+END
+invoice.py
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/account_voucher/invoice.py
+END
+voucher_sales_purchase_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/account_voucher/voucher_sales_purchase_view.xml
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/account_voucher/__init__.py
+END
+invoice.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/account_voucher/invoice.pyc
+END
+__init__.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/account_voucher/__init__.pyc
+END

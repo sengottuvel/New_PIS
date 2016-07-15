@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/kg_qa
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/kg_qa/__init__.py
+END
+__init__.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/kg_qa/__init__.pyc
+END
+kg_qa.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/kg_qa/kg_qa.py
+END
+__openerp__.py
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/kg_qa/__openerp__.py
+END
+kg_qa_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/kg_qa/kg_qa_view.xml
+END
+kg_qa.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/kg_qa/kg_qa.pyc
+END

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/account_asset/report
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/account_asset/report/__init__.py
+END
+account_asset_report.py
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/account_asset/report/account_asset_report.py
+END
+account_asset_report_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/account_asset/report/account_asset_report_view.xml
+END

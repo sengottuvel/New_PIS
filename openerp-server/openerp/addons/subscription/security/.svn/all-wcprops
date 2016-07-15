@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/subscription/security
+END
+ir.model.access.csv
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/subscription/security/ir.model.access.csv
+END
+subcription_security.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/subscription/security/subcription_security.xml
+END

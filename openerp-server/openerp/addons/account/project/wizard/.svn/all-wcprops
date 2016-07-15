@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/account/project/wizard
+END
+project_account_analytic_line.py
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/account/project/wizard/project_account_analytic_line.py
+END
+project_account_analytic_line_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/account/project/wizard/project_account_analytic_line_view.xml
+END
+account_analytic_inverted_balance_report.py
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/account/project/wizard/account_analytic_inverted_balance_report.py
+END
+account_analytic_balance_report.py
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/account/project/wizard/account_analytic_balance_report.py
+END
+account_analytic_balance_report_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/account/project/wizard/account_analytic_balance_report_view.xml
+END
+account_analytic_cost_ledger_report.py
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/account/project/wizard/account_analytic_cost_ledger_report.py
+END
+account_analytic_cost_ledger_for_journal_report.py
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/account/project/wizard/account_analytic_cost_ledger_for_journal_report.py
+END
+account_analytic_cost_ledger_for_journal_report_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/account/project/wizard/account_analytic_cost_ledger_for_journal_report_view.xml
+END
+account_analytic_inverted_balance_report.xml
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/account/project/wizard/account_analytic_inverted_balance_report.xml
+END
+account_analytic_cost_ledger_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/account/project/wizard/account_analytic_cost_ledger_view.xml
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/account/project/wizard/__init__.py
+END
+account_analytic_chart.py
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/account/project/wizard/account_analytic_chart.py
+END
+account_analytic_chart_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/account/project/wizard/account_analytic_chart_view.xml
+END
+account_analytic_journal_report.py
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/account/project/wizard/account_analytic_journal_report.py
+END
+account_analytic_journal_report_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/account/project/wizard/account_analytic_journal_report_view.xml
+END

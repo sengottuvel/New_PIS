@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/stock_invoice_directly/wizard
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/stock_invoice_directly/wizard/__init__.py
+END
+stock_invoice.py
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/stock_invoice_directly/wizard/stock_invoice.py
+END

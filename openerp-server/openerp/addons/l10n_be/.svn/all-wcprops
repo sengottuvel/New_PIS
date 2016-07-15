@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/l10n_be
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/l10n_be/__init__.py
+END
+pcmn.csv
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/l10n_be/pcmn.csv
+END
+__init__.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/l10n_be/__init__.pyc
+END
+account_financial_report.xml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/l10n_be/account_financial_report.xml
+END
+__openerp__.py
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/l10n_be/__openerp__.py
+END
+account_tax_code_template.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/l10n_be/account_tax_code_template.xml
+END
+account_demo.xml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/l10n_be/account_demo.xml
+END
+l10n_be_wizard.yml
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/l10n_be/l10n_be_wizard.yml
+END
+account_tax_template.xml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/l10n_be/account_tax_template.xml
+END
+account_chart_template.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/l10n_be/account_chart_template.xml
+END
+account_fiscal_position_tax_template.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/l10n_be/account_fiscal_position_tax_template.xml
+END
+l10n_be_sequence.xml
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/l10n_be/l10n_be_sequence.xml
+END
+pcmn3.csv
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/l10n_be/pcmn3.csv
+END
+account_pcmn_belgium.xml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/l10n_be/account_pcmn_belgium.xml
+END
+fiscal_templates.xml
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/l10n_be/fiscal_templates.xml
+END

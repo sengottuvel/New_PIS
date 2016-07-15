@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/l10n_in_hr_payroll/test
+END
+payment_advice.yml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/l10n_in_hr_payroll/test/payment_advice.yml
+END
+payment_advice_batch.yml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/KGTrust_ERP/!svn/ver/4/openerp-server/openerp/addons/l10n_in_hr_payroll/test/payment_advice_batch.yml
+END

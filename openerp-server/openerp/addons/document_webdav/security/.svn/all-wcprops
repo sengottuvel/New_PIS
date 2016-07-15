@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/document_webdav/security
+END
+ir.model.access.csv
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/document_webdav/security/ir.model.access.csv
+END

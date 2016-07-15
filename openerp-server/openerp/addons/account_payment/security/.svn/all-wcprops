@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/account_payment/security
+END
+ir.model.access.csv
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/account_payment/security/ir.model.access.csv
+END
+account_payment_security.xml
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/KGTrust_ERP/!svn/ver/2/openerp-server/openerp/addons/account_payment/security/account_payment_security.xml
+END

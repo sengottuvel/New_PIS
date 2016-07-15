@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+	
+	<!-- Form View -->
+	
+		<record id="kg_selling_cost_form_view" model="ir.ui.view">
+				<field name="name">Selling Cost Details</field>
+				<field name="model">kg.selling.cost.details</field>
+				<field name="arch" type="xml">
+				<form string="Selling Cost Details Form" version="7.0">
+				<header>
+					<button name="load_stock" type="object" string="Load Items" states="load"  class="oe_highlight" confirm="Are you sure to proceed ?"/>
+					
+					<button name="entry_reject" type="object" string="Reject" states="confirm" class="oe_highlight" confirm="Are you sure to proceed ?" invisible="1"/>
+					<button name="entry_approve" type="object" string="Approve" states="confirm" class="oe_highlight" confirm="Are you sure to proceed ?"/>
+					<button name="entry_draft" type="object" string="Set Draft" states="cancel" class="oe_highlight"/>
+					<button name="entry_confirm" type="object" string="Confirm" states="draft" class="oe_highlight"/>
+					<button name="entry_cancel" type="object" string="Cancel" states="approved" class="oe_highlight" confirm="Are you sure to proceed ?" invisible="1"/>
+					
+				</header>			
+					<group>
+						<group>
+							<field name="user_id"/>
+							<field name="conf_user_id"/>
+							<field name="app_user_id"/>
+							<field name="name" invisible="1"/>
+							<field name="partner_id" invisible="1"/>
+							<field name="state"/>	
+						</group>											
+						<group>
+							<field name="date"/>							
+							<field name="confirm_date"/>							
+							<field name="approve_date"/>							
+							<field name="trans_date" invisible="1"/>							
+							<field name="active" invisible="1"/>							
+							<field name="load" invisible="1"/>							
+													
+						</group>					
+					</group>				   
+					<notebook>
+						<page string="Line Details">
+						<field colspan="4" mode="tree" name="line_ids" nolabel="1" widget="one2many_list" >
+							<tree string="Selling Cost Details Line" create="0" delete="0" editable="bottom"> 
+								<field name="product_id" readonly="1"/>								
+<!--
+								<field name="brand_id" readonly="1"/>								
+-->
+								<field name="uom_id" readonly="1"/>								
+																
+								<field name="purchase_price" readonly="1"/>										
+									<field name="sale_price"/>								
+							</tree>					
+							<form string="Selling Cost Details Line" >
+								<group>
+									<group>
+										<field name="product_id"/>										
+<!--
+										<field name="brand_id"/>										
+-->
+										<field name="uom_id"/>										
+										<field name="purchase_price"/>										
+										<field name="sale_price"/>										
+									</group>
+									<group>
+										<field name="discount"/>										
+										
+										<field name="remark"/>
+									</group>
+								</group>
+							</form>
+						</field>
+					</page>					
+					</notebook>					
+					<field name="remark" placeholder="Remarks"/>
+				</form>
+			</field>
+		</record>
+
+	<!-- Tree View -->
+		
+		<record id="kg_selling_cost_tree_view" model="ir.ui.view">
+			<field name="name">Selling Cost Details</field>
+			<field name="model">kg.selling.cost.details</field>
+			<field eval="8" name="priority"/>
+			<field name="arch" type="xml">
+				<tree colors="blue:state == 'draft';red:state == 'confirm'
+						;black:state == 'approved';gray:state == 'reject'" 
+								toolbar="True" string="Selling Cost Details">				
+					<field name="date" invisible="1"/>
+					<field name="name" invisible="1"/>
+					<field name="trans_date"/>
+					<field name="partner_id" invisible="1"/>
+					<field name="total" sum="Total" invisible="1"/>
+					<field name="user_id"/>	
+					<field name="state"/>					
+									
+				</tree>
+			</field>
+		</record>
+		
+	<!-- Search View -->
+		
+		<record id="kg_selling_cost_search_view" model="ir.ui.view">
+            <field name="name">Selling Cost Details</field>
+            <field name="model">kg.selling.cost.details</field>
+            <field name="arch" type="xml">
+                <search string="Selling Cost Details">
+					<field name="name" string="Selling Cost Details" filter_domain="['|',('name','ilike',self),('partner_id','ilike',self)]"/>
+					<filter icon="terp-check" name="draft" string="Draft" domain="[('state','=','draft')]"/>
+					<filter icon="terp-check" name="confirm" string="Confirmed" domain="[('state','=','confirm')]"/>
+					<filter icon="terp-check" name="approved" string="Approved" domain="[('state','=','approved')]"/>
+					<filter icon="terp-check" name="rejected" string="Rejected" domain="[('state','=','reject')]"/>
+					<filter icon="terp-check" name="cancel" string="Cancel" domain="[('state','=','cancel')]"/>
+					<separator/>
+                    <group expand="0" string="Group By...">
+                        <filter string="Buyer" icon="terp-personal" domain="[]" context="{'group_by':'partner_id'}"/>
+                        <filter string="Date" icon="terp-gtk-select-all" domain="[]" context="{'group_by':'trans_date'}"/>
+                        <filter string="Created By" icon="terp-gtk-select-all" domain="[]" context="{'group_by':'user_id'}"/>
+                        <filter string="Status" icon="terp-gtk-select-all" domain="[]" context="{'group_by':'state'}"/>
+					</group>
+                </search>
+			</field>
+		</record>		
+			
+        
+	<!-- Menu Action -->			
+		
+		 <record id="kg_selling_cost_form_action" model="ir.actions.act_window">
+			<field name="name">Selling Cost Details</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">kg.selling.cost.details</field>
+			<field name="view_type">form</field>
+			<field name="context">{}</field>
+			<field name="view_id" ref="kg_selling_cost_tree_view"/>
+			<field name="search_view_id" ref="kg_selling_cost_search_view"/>
+		</record>	
+		
+	<!-- Menu Items -->
+				
+		<menuitem action="kg_selling_cost_form_action" id="kg_selling_cost_action_menu" parent="base.menu_sales" sequence="5"/>
+	
+	</data>
+</openerp>
