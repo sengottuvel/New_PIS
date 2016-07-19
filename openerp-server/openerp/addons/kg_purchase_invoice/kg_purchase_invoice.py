@@ -20,7 +20,7 @@ from datetime import timedelta
 from dateutil import relativedelta
 import calendar
 today = datetime.now()
-import MySQLdb
+#import MySQLdb
 a = datetime.now()
 dt_time = a.strftime('%m/%d/%Y %H:%M:%S')
 
@@ -1078,7 +1078,7 @@ class kg_purchase_invoice(osv.osv):
 		return osv.osv.unlink(self, cr, uid, unlink_ids, context=context)
 		
 	def invoice_to_helpdesk(self,cr,uid,ids = 0 ,context = None):
-		my_db = MySQLdb.connect("10.100.1.125","erp_user","kgisl","helpdesk" ) # Live
+		#my_db = MySQLdb.connect("10.100.1.125","erp_user","kgisl","helpdesk" ) # Live
 		cursor = my_db.cursor()
 		cur_date = datetime.now()+ timedelta(minutes = 328)
 		cur_date = cur_date.strftime('%Y-%m-%d %H:%M:%S')
