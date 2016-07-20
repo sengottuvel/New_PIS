@@ -8,7 +8,7 @@
                 usage="default"/> -->
 
 
-		<report string="PO - Vendor Copy"
+		<report string="Quotation Copy"
         model="purchase.order"
         auto="True"
         name="onscreen_purchase_order_report"

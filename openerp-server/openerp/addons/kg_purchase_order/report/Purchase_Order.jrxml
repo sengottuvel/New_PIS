@@ -451,7 +451,7 @@ where po.id = $P{po_id}]]>
 					<textElement verticalAlignment="Middle">
 						<font size="10" isBold="true"/>
 					</textElement>
-					<textFieldExpression><![CDATA["PO Amount"]]></textFieldExpression>
+					<textFieldExpression><![CDATA["Total Amount"]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="true">
 					<reportElement stretchType="RelativeToBandHeight" isPrintRepeatedValues="false" x="367" y="16" width="90" height="15" isPrintWhenDetailOverflows="true"/>
@@ -797,7 +797,7 @@ where po.id = $P{po_id}]]>
 					<textElement verticalAlignment="Middle">
 						<font size="8"/>
 					</textElement>
-					<textFieldExpression><![CDATA["All Disputes are Subject to Coimbatore Jurisdiction."]]></textFieldExpression>
+					<textFieldExpression><![CDATA["All Disputes are Subject to Perundurai Jurisdiction."]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="true">
 					<reportElement isPrintRepeatedValues="false" x="2" y="33" width="70" height="15" isPrintWhenDetailOverflows="true"/>
@@ -927,16 +927,7 @@ where po.id = $P{po_id}]]>
 			</band>
 		</groupHeader>
 	</group>
-	<background>
-		<band height="802" splitType="Stretch">
-			<image>
-				<reportElement x="1" y="132" width="553" height="472">
-					<printWhenExpression><![CDATA[new Boolean(($F{status}.equals("draft")))]]></printWhenExpression>
-				</reportElement>
-				<imageExpression><![CDATA["/OpenERP/KGTrust/openerp-server/openerp/addons/kg_purchase_order/images/Draft.jpg"]]></imageExpression>
-			</image>
-		</band>
-	</background>
+	
 	<pageHeader>
 		<band height="106" splitType="Stretch">
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
