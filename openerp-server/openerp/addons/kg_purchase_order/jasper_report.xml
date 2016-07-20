@@ -17,7 +17,7 @@
         menu="True"
         header="False"
         />
-        
+        <!--
         <report string="PO - Official Copy"
         model="purchase.order"
         auto="True"
@@ -26,7 +26,7 @@
         id="kg_po_jasper_report_menu" 
         menu="True"
         header="False"
-        />
+        /> -->
 
 
     </data>
