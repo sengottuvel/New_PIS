@@ -2,7 +2,7 @@
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Purchase_Order" language="groovy" pageWidth="594" pageHeight="842" columnWidth="554" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
 	<property name="ireport.zoom" value="1.0"/>
 	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="576"/>
+	<property name="ireport.y" value="0"/>
 	<subDataset name="dataset1"/>
 	<subDataset name="New Dataset 1">
 		<parameter name="order_id" class="java.lang.Integer"/>
@@ -927,7 +927,6 @@ where po.id = $P{po_id}]]>
 			</band>
 		</groupHeader>
 	</group>
-	
 	<pageHeader>
 		<band height="106" splitType="Stretch">
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
@@ -939,10 +938,10 @@ where po.id = $P{po_id}]]>
 				<textFieldExpression><![CDATA[$F{company_name}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement mode="Transparent" x="-1" y="62" width="429" height="16" isPrintWhenDetailOverflows="true"/>
+				<reportElement mode="Transparent" x="0" y="62" width="532" height="16" isPrintWhenDetailOverflows="true"/>
 				<box leftPadding="2"/>
 				<textElement/>
-				<textFieldExpression><![CDATA[$F{street1}+$F{street2}+$F{city}+"-"+$F{zip}+" "+$F{state}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{street1}+$F{street2}+$F{city}+"-"+$F{zip}+","+$F{state}]]></textFieldExpression>
 			</textField>
 			<image>
 				<reportElement x="672" y="83" width="496" height="0"/>
@@ -1113,7 +1112,7 @@ where po.id = $P{po_id}]]>
 				<textFieldExpression><![CDATA["Delivery Date : "+"-"]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement positionType="Float" stretchType="RelativeToTallestObject" isPrintRepeatedValues="false" mode="Transparent" x="1" y="51" width="279" height="50" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true"/>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" isPrintRepeatedValues="false" mode="Transparent" x="1" y="51" width="256" height="50" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true"/>
 				<box topPadding="4" leftPadding="3">
 					<topPen lineWidth="0.25"/>
 					<leftPen lineWidth="0.25"/>
@@ -1135,7 +1134,7 @@ where po.id = $P{po_id}]]>
 				<textFieldExpression><![CDATA["Quotation "]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement isPrintRepeatedValues="false" mode="Transparent" x="310" y="51" width="56" height="42" isRemoveLineWhenBlank="true"/>
+				<reportElement isPrintRepeatedValues="false" mode="Transparent" x="304" y="49" width="45" height="50" isRemoveLineWhenBlank="true"/>
 				<box topPadding="4" rightPadding="3"/>
 				<textElement textAlignment="Right">
 					<font size="8"/>
@@ -1171,7 +1170,7 @@ where po.id = $P{po_id}]]>
 				<textFieldExpression><![CDATA[$F{contact_person}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement positionType="Float" stretchType="RelativeToTallestObject" isPrintRepeatedValues="false" mode="Transparent" x="311" y="101" width="56" height="42" isRemoveLineWhenBlank="true"/>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" isPrintRepeatedValues="false" mode="Transparent" x="293" y="111" width="56" height="42" isRemoveLineWhenBlank="true"/>
 				<box topPadding="3" rightPadding="3"/>
 				<textElement textAlignment="Right">
 					<font size="8"/>
@@ -1195,19 +1194,6 @@ where po.id = $P{po_id}]]>
 				</textElement>
 				<textFieldExpression><![CDATA["Project"+":"]]></textFieldExpression>
 			</textField>
-			<textField isBlankWhenNull="true">
-				<reportElement positionType="Float" isPrintRepeatedValues="false" mode="Transparent" x="367" y="101" width="187" height="42" isRemoveLineWhenBlank="true"/>
-				<box topPadding="4" leftPadding="3">
-					<topPen lineWidth="0.25"/>
-					<leftPen lineWidth="0.25"/>
-					<bottomPen lineWidth="0.25"/>
-					<rightPen lineWidth="0.25"/>
-				</box>
-				<textElement>
-					<font size="7"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{company_name}+"\n"+$F{street1}+"\n"+$F{street2}+"\n"+$F{city}+"-"+","+ $F{state}+"."]]></textFieldExpression>
-			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 				<reportElement isPrintRepeatedValues="false" x="68" y="143" width="189" height="12" isRemoveLineWhenBlank="true"/>
 				<textElement verticalAlignment="Middle">
@@ -1221,19 +1207,6 @@ where po.id = $P{po_id}]]>
 					<font size="8"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{sup_email}]]></textFieldExpression>
-			</textField>
-			<textField isBlankWhenNull="true">
-				<reportElement positionType="Float" isPrintRepeatedValues="false" mode="Transparent" x="367" y="51" width="188" height="42" isRemoveLineWhenBlank="true"/>
-				<box topPadding="4" leftPadding="3">
-					<topPen lineWidth="0.25"/>
-					<leftPen lineWidth="0.25"/>
-					<bottomPen lineWidth="0.25"/>
-					<rightPen lineWidth="0.25"/>
-				</box>
-				<textElement>
-					<font size="7"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{company_name}+"\n"+$F{street1}+"\n"+$F{street2}+"\n"+$F{city}+"-"+","+ $F{state}+"."]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true">
 				<reportElement isPrintRepeatedValues="false" x="9" y="155" width="39" height="12" isRemoveLineWhenBlank="true"/>
@@ -1318,7 +1291,7 @@ where po.id = $P{po_id}]]>
 				<textFieldExpression><![CDATA[$F{project_name}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement isPrintRepeatedValues="false" x="1" y="51" width="279" height="12" isRemoveLineWhenBlank="true"/>
+				<reportElement isPrintRepeatedValues="false" x="1" y="51" width="256" height="12" isRemoveLineWhenBlank="true"/>
 				<box topPadding="1" leftPadding="2">
 					<topPen lineWidth="0.25"/>
 					<leftPen lineWidth="0.25"/>
@@ -1330,7 +1303,7 @@ where po.id = $P{po_id}]]>
 				<textFieldExpression><![CDATA[$F{supplier_name}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement isPrintRepeatedValues="false" x="1" y="63" width="279" height="12" isRemoveLineWhenBlank="true"/>
+				<reportElement isPrintRepeatedValues="false" x="1" y="63" width="256" height="12" isRemoveLineWhenBlank="true"/>
 				<box topPadding="0" leftPadding="2">
 					<leftPen lineWidth="0.25"/>
 					<rightPen lineWidth="0.25"/>
@@ -1341,7 +1314,7 @@ where po.id = $P{po_id}]]>
 				<textFieldExpression><![CDATA[$F{sup_street1}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement isPrintRepeatedValues="false" x="1" y="75" width="279" height="12" isPrintWhenDetailOverflows="true"/>
+				<reportElement isPrintRepeatedValues="false" x="1" y="75" width="256" height="12" isPrintWhenDetailOverflows="true"/>
 				<box topPadding="0" leftPadding="2">
 					<leftPen lineWidth="0.25"/>
 					<rightPen lineWidth="0.25"/>
@@ -1352,7 +1325,7 @@ where po.id = $P{po_id}]]>
 				<textFieldExpression><![CDATA[$F{sup_street2}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement isPrintRepeatedValues="false" x="1" y="87" width="279" height="14" isRemoveLineWhenBlank="true"/>
+				<reportElement isPrintRepeatedValues="false" x="1" y="87" width="256" height="14" isRemoveLineWhenBlank="true"/>
 				<box topPadding="0" leftPadding="2">
 					<leftPen lineWidth="0.25"/>
 					<bottomPen lineWidth="0.25"/>
@@ -1371,6 +1344,98 @@ where po.id = $P{po_id}]]>
 					<font size="8"/>
 				</textElement>
 				<textFieldExpression><![CDATA["PO Date:"+" "+ $F{po_date}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement isPrintRepeatedValues="false" x="349" y="51" width="205" height="12" isRemoveLineWhenBlank="true"/>
+				<box topPadding="1" leftPadding="2">
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{supplier_name}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement isPrintRepeatedValues="false" x="349" y="63" width="205" height="12" isRemoveLineWhenBlank="true"/>
+				<box topPadding="0" leftPadding="2">
+					<leftPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sup_street1}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement isPrintRepeatedValues="false" x="349" y="75" width="205" height="12" isPrintWhenDetailOverflows="true"/>
+				<box topPadding="0" leftPadding="2">
+					<leftPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sup_street2}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement isPrintRepeatedValues="false" x="349" y="87" width="205" height="14" isRemoveLineWhenBlank="true"/>
+				<box topPadding="0" leftPadding="2">
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sup_city}+"-"+$F{sup_zip}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement isPrintRepeatedValues="false" x="349" y="112" width="205" height="12" isRemoveLineWhenBlank="true"/>
+				<box topPadding="1" leftPadding="2">
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{supplier_name}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement isPrintRepeatedValues="false" x="349" y="124" width="205" height="12" isRemoveLineWhenBlank="true"/>
+				<box topPadding="0" leftPadding="2">
+					<leftPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sup_street1}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement isPrintRepeatedValues="false" x="349" y="136" width="205" height="12" isPrintWhenDetailOverflows="true"/>
+				<box topPadding="0" leftPadding="2">
+					<leftPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sup_street2}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement isPrintRepeatedValues="false" x="349" y="147" width="205" height="14" isRemoveLineWhenBlank="true"/>
+				<box topPadding="0" leftPadding="2">
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sup_city}+"-"+$F{sup_zip}]]></textFieldExpression>
 			</textField>
 		</band>
 	</columnHeader>
